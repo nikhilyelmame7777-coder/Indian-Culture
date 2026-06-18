@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <style>
+        body{
+            background:linear-gradient(to right, #fdfbfb, #ebedee)
+        }
+header{
+    background: linear-gradient(to right, orange, red);
+    text-align:center;
+    color:white;
+    height:200px;
+    margin:10px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1{
+    padding-top:40px;
+    font-size:90px;
+    letter-spacing:3px;
+}
+    p{
+        font-size:18px;
+        line-height:1.6;
+        margin:10px 0;
+        color:#333;
+
+    }
+    h2{
+    text-align:center;
+    font-size:43px;
+    color:#f4f1f1;
+    border-bottom:3px solid orange;
+    padding-bottom:5px;
+    background:linear-gradient(to right,rgb(245, 59, 7),rgb(216, 3, 28));
+    margin:10px;
+
+
+}
+    h3{
+        color:#fefefe;
+        margin-top:20px;
+        font-size:33px;
+        background:linear-gradient(to right,orange,red);
+        text-align:center;
+        border-radius:5px;
+        height:50px;
+    }
+    h3:hover{
+        transform:scale(1.01);
+    }
+        
+        img{
+            height:200px;
+            width:350px;
+            
+            border-radius:10px;
+            
+            margin:1cqb;
+        }
+        .sliders{
+            display:flex;
+            padding:3px;
+            overflow-x:auto;
+            scroll-snap-type:mandatory;
+            margin:13px;
+            background-color:white;
+        }
+        .sliders img{transition:0.3s;
+         border-radius:10px;}
+        main{
+            background-color:white;
+            margin:65px auto;
+            padding:25px;
+            border:4px solid red;
+            width:80%;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
+        .diwali,.gudhipadwa,.holi, .ramnavmi, .dussehra, .navratri, .nagpanchami, .makarsankranti, .diwali{
+        display:flex;
+        overflow-x:auto;
+        padding:14px;
+        gap:15px;
+        margin:30px 0;
+        background:white;
+        border-radius:12px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+        .diwali,
+        .gudhipadawa,
+        .holi img,
+        .ramnavmi img,
+        .dussehra img,
+        .navratri img,
+        .nagpanchami img,
+        .makarsankranti img,
+        .diwali img{
+            height:200px;
+            border-radius:10px;
+            transition:0.2s;
+        }
+
+img:hover{
+    transform:scale(1.05);
+}
+::-webkit-scrollbar{
+    height:8px;
+}
+main{
+    animation:fadeIn 1s ease-in;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.indipendance,.republic{
+    border:3px solid rgb(255, 78, 3);
+    border-radius:10px;
+    padding:11px;
+    padding-left:8px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.content{
+    border:3px solid rgb(69, 190, 13);
+    border-radius:12px;
+    margin:15px;
+    padding:14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.class{
+    border:3px solid rgb(247, 4, 137);
+    border-radius:10px;
+    padding:8px;
+    margin:13px;
+}
+ summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+        footer{
+            background:black;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+            font-size:20px;
+        }
+    #homeBtn{
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #95ed07;
+  color: white;
+
+  font-size: 20px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+  transition: 0.3s;
+}
+
+#homeBtn i{
+   color:white;
+}
+
+#homeBtn:hover{
+  background:#ea4a06;
+  transform:translateY(-5px);
+}
+.home{
+    border:1px solid black ;
+    border-radius:12px;
+    padding:7px;
+    padding-left:20px;
+    width:100px;
+    background:linear-gradient(to right,rgb(244, 6, 161),red);
+    
+    
+    
+}
+.home a{
+    text-decoration:none;
+    font-size:30px;
+    color:Black;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Indian Festivals</h1>
+    </header>
+    
+        <div class="sliders">
+        <img src="https://www.superprof.co.in/blog/wp-content/uploads/2023/02/festivals.jpg">
+        <img src="https://indianatravelservices.com/wp-content/uploads/ganesh-chaturthi-in-pune.jpg">
+        <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/09/20124240/indian-festivals-1600x900.jpg">
+        <img src="https://i.pinimg.com/736x/55/f7/8b/55f78bd90ba7da532c90778090dce1a5.jpg">
+        <img src="https://static.india.com/wp-content/uploads/2018/01/lohri.jpg?impolicy=Medium_Widthonly&w=400">
+        <img src="https://images.nativeplanet.com/img/2017/09/1-25-1506322210.jpg">
+        <img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/10/Rakshabandhan.jpg">
+        <img src="https://indiator.com/tourist-places/wp-content/uploads/2018/11/Diwali-blog-image.jpg">
+        <img src="https://kreditbee.in/blog/content/images/2024/08/Blog-Image_Aug_16_Independence-Day-in-India.png">
+        </div>
+<button id="homeBtn">
+   <i class="fa-solid fa-arrow-up"></i>
+</button>
+    <main>
+        <div class="home">
+            <a href="culture.html">Home</a>
+        </div>
+        <h2>National Festivals</h2>
+        <p>India is a land of vibrant cultures, rich traditions, and diverse communities. Festivals play a significant role in bringing people together and preserving the nation's cultural heritage. National festivals, in particular, are celebrated across the country with enthusiasm and reverence, showcasing unity in diversity. Here are 20 national festivals of India, their significance, and how they are celebrated</p>
+        <div class="indipendance">
+        <details>
+        <summary><h3><b>1.Independance Day</b></h3></summary>
+        <p><b>Significance:</b> It marks the end of British colonial rule and the beginning of a new era as India became a free and sovereign nation on 15 August 1947.</p>
+
+        <p><b>Celebrations:</b> The Prime Minister hoists the national flag at the Red Fort and addresses the nation. Cultural programs, parades, and patriotic events are organized across the country.</p>
+
+        <p><b>Patriotism:</b> The day is filled with a strong sense of national pride. People decorate homes, schools, and public places with the national flag, sing patriotic songs, and participate in celebrations.</p>
+
+        <p><b>History:</b> India’s independence movement was largely based on non-violent resistance and civil disobedience led by the Indian National Congress.</p>
+        <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/08/freepik-august-15-1755098600.jpg">
+</div>
+</details>
+        <hr>
+
+        <div class="republic">
+        <details>
+       <summary><h3><b>2.Republic Day</b></h3></summary>
+        <p>
+            <p><b>Significance:</b> While Independence Day (Aug 15) marks freedom from British rule, Republic Day honors the date the nation's legal and constitutional framework came into effect.</p>
+
+            <p><b>History:</b> The date was chosen to commemorate the Purna Swaraj (Complete Self-Governance) declaration proclaimed by the Indian National Congress in 1930.</p>
+
+            <p><b>First Celebration:</b> Dr. Rajendra Prasad took oath as the first President of India on January 26, 1950, at the Irwin Amphitheatre in New Delhi.</p>
+
+            <p><b>Celebrations:</b> The main event is the grand parade at Kartavya Path in New Delhi, featuring military displays, state tableaus, and cultural performances showcasing unity in diversity.</p>
+
+            <p><b>Conclusion:</b> The festivities officially end with the Beating Retreat ceremony on January 29.</p>
+        </p>
+        </div>
+    </div>
+    <hr><hr>
+    
+        <div class="class">
+            <details>
+       <summary><h2>Cultural Festivals</h2></summary>
+    <div class="content">
+        <h3><b>Diwali :Festival of Lights</b></h3>
+        <p>
+            <div class="diwali">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/The_Rangoli_of_Lights.jpg/500px-The_Rangoli_of_Lights.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKlk8gFmiw0jpvWe7piOlvvj0XPVDYzpjZyw&s">
+            <img src="https://static.independent.co.uk/2025/10/20/7/50/SEI270988095.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGFTX1vQ-Shpkhh9QmJ2UGM_RSGhW7F3oZPg&s">
+            </div>
+            <p>Diwali, or Dipawali, is India's biggest and most important holiday of the year. The festival gets its name from the row (avali) of clay lamps (deepa) that Indians light outside their homes to symbolize the inner light that protects from spiritual darkness. This festival is as important to Hindus as the Christmas holiday is to Christians.
+
+Over the centuries, Diwali has become a national festival that's also enjoyed by non-Hindu communities. For instance, in Jainism, Diwali marks the nirvana, or spiritual awakening, of Lord Mahavira on October 15, 527 B.C.; in Sikhism, it honors the day that Guru Hargobind Ji, the Sixth Sikh Guru, was freed from imprisonment. Buddhists in India celebrate Diwali as well.</p>
+        </p>
+        <p><b>Diwali Celebration:</b> Diwali is celebrated over five days.</p>
+
+<p><b>Day One:</b> People clean their homes and shop for gold or kitchen utensils to help bring good fortune.</p>
+
+<p><b>Day Two:</b> People decorate their homes with clay lamps and create design patterns called rangoli on the floor using colored powders or sand.</p>
+
+<p><b>Day Three:</b> On the main day of the festival, families gather together for Lakshmi puja, a prayer to Goddess Lakshmi, followed by feasts and fireworks.</p>
+
+<p><b>Day Four:</b> This is the first day of the new year, when friends and relatives visit with gifts and best wishes.</p>
+
+<p><b>Day Five:</b> Brothers visit their married sisters, who welcome them with love and a lavish meal.</p>
+<img src="https://i.natgeofe.com/k/7709b681-7103-46f2-8aeb-2412de04b830/WH-NY-Fireworks_3x2.jpg?wp=1&w=780&h=520">
+</div>
+<div class="content">
+        <h3><b>Gudhi Padawa : Marathi New Year</b></h3>
+        <p>
+            <div class="gudhipadwa">
+            <img src="https://dont2qcigdrmt.cloudfront.net/BlogThumbnail/Articles/Significance-&-Importance-of-Gudi-Padwa_211091.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/A_new_year_procession_on_Gudi_Padwa_festival%2C_Dombivli_Maharashtra.jpg/1280px-A_new_year_procession_on_Gudi_Padwa_festival%2C_Dombivli_Maharashtra.jpg">
+            <img src="https://www.reuters.com/resizer/v2/https%3A%2F%2Farchive-images.prod.global.a201836.reutersmedia.net%2F2017%2F03%2F28%2F2017-03-28T122503Z_26137_MRPRC1D3E33D2F0_RTRMADP_0_INDIA-CULTURE.JPG?auth=e5af8ef2485448519c15fcead89b79c47c334e9c4338ebb814268bf5b46c4b46&width=1920&quality=80">
+            </div>
+            <p>
+                Gudhi Padwa is the Maharashtrian and Konkani Hindu New Year, celebrated on the first day of Chaitra (March-April) to mark spring's arrival and the harvest season. It commemorates the victory of good over evil, often associated with Lord Rama’s return to Ayodhya. Homes hoist a decorated Gudhi flag, symbolizing victory and prosperity
+            </p>
+            <p><b>Significance:</b> Symbolizes new beginnings, prosperity, and the start of the Maharashtrian New Year. It is celebrated to commemorate the victory of Lord Rama over Ravana or the creation of the universe by Lord Brahma.</p>
+
+            <p><b>The Gudi (Symbol):</b> A bamboo pole with a copper or silver pot (Kalash) placed upside down, adorned with neem leaves, mango leaves, red flowers, and a yellow cloth.</p>
+
+            <p><b>Meaning of the Name:</b> Gudi means flag or emblem, and Padwa is derived from 'Pratipada', the first day of the lunar fortnight.</p>
+
+            <p><b>Traditions:</b> People take early morning oil baths, draw vibrant rangolis, and gather for celebrations.</p>
+
+            <p><b>Food:</b> Festive dishes include sweets made from jaggery, neem leaves (symbolizing health), and traditional snacks like Sabudana Vada and Shakar Gaathi.</p>
+
+            <p><b>Regional Variations:</b> It is celebrated as Ugadi in Karnataka and Andhra Pradesh.</p>
+        </p>
+        </div>
+<div class="content">
+<h3><b>Holi : Festival of Colors</b></h3>
+
+<div class="holi">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfM9HRSknpPzGHKN9ZygYWajTegt_n9u6Pnw&s">
+    <img src="https://photoworkshopadventures.com/wp-content/uploads/2020/05/01-photo-workshop-adventures-priyank-tyagi-india-holi-festival.jpg">
+    <img src="https://i.ytimg.com/vi/uNTBNdTtJ20/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDnvl0gjzhDsSrNcDuxbmm_AsJseQ">
+</div>
+
+<p>
+Holi is a vibrant Hindu festival celebrated in spring, marking the victory of good over evil and the arrival of the harvest season.
+</p>
+
+<p><b>Significance:</b> Celebrates the victory of good over evil, associated with Prahlad and Holika.</p>
+<p><b>Traditions:</b> People play with colors, water balloons, and celebrate with music and dance.</p>
+<p><b>Food:</b> Gujiya, Thandai, and sweets are popular.</p>
+<p><b>Celebrations:</b> Bonfires (Holika Dahan) are lit on the previous night.</p>
+</div>
+<div class="content">
+
+<h3><b>Ram Navami : Birth of Lord Rama</b></h3>
+
+<div class="ramnavmi">
+    <img src="https://assets.mypandit.com/wp-content/uploads/2021/04/Ram_Navami.webp">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcaKDPtwj-3zAwgQul3wjbs7Ct7H6uhTNHKg&s">
+    <img src="https://newsarenaindia.com/_next/image?url=https%3A%2F%2Fimages.newsarenaindia.com%2Fram-mandir-new5naijpg_1743865794345.jpg&w=1920&q=75">
+</div>
+
+<p>
+Ram Navami celebrates the birth of Lord Rama, an incarnation of Vishnu.
+</p>
+
+<p><b>Significance:</b> Marks the birth of Lord Rama, symbolizing righteousness and virtue.</p>
+<p><b>Traditions:</b> Devotees fast, visit temples, and recite the Ramayana.</p>
+<p><b>Food:</b> Fruits and simple sattvic meals are consumed.</p>
+<p><b>Celebrations:</b> Processions and bhajans are organized.</p>
+</div>
+<div class="content">
+<h3><b>Dussehra : Victory of Good over Evil</b></h3>
+
+<div class="dussehra">
+    <img src="https://static.toiimg.com/thumb/msid-124235038,imgsize-41406,width-400,resizemode-4/dussehra.jpg">
+    <img src="https://zoyotrip.in/wp-content/uploads/2025/09/dushera1-1-1024x1024.jpg.webp">
+    <img src="https://images.news18.com/ibnlive/uploads/2024/10/happy-dussehra-wishes-vijayadashami-2024-dasara-5-2024-10-f020adfbb780c9b032cd001a42f10355-scaled.jpg?impolicy=website&width=0&height=0">
+</div>
+
+<p>
+Dussehra marks the victory of Lord Rama over Ravana.
+</p>
+
+<p><b>Significance:</b> Symbolizes the triumph of good over evil.</p>
+<p><b>Traditions:</b> Burning of Ravana effigies and Ramlila performances.</p>
+<p><b>Food:</b> Sweets and festive meals.</p>
+<p><b>Celebrations:</b> Public gatherings and fairs.</p>
+</div>
+<div class="content">
+
+<h3><b>Navratri : Nine Nights of Goddess Durga</b></h3>
+
+<div class="navratri">
+    <img src="https://artium-v2-blogs.s3.ap-south-1.amazonaws.com/wp-content/uploads/2025/09/10-Navratri-Songs-That-Deserve-a-Spot-on-Your-Playlist-in-2025-scaled.webp">
+    <img src="https://www.savaari.com/blog/wp-content/uploads/2024/09/image-68.png">
+    <img src="https://images.financialexpressdigital.com/2019/10/Navratri-Gujarat-Tourism-660.jpg">
+</div>
+
+<p>
+Navratri is a nine-night festival dedicated to Goddess Durga.
+</p>
+
+<p><b>Significance:</b> Celebrates the victory of Goddess Durga over Mahishasura.</p>
+<p><b>Traditions:</b> Fasting, Garba and Dandiya dances.</p>
+<p><b>Food:</b> Fasting foods like sabudana and fruits.</p>
+<p><b>Celebrations:</b> Cultural dances and temple worship.</p>
+</div>
+<div class="content">
+
+<h3><b>Nag Panchami : Worship of Serpents</b></h3>
+
+<div class="nagpanchami">
+    <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-1416604,resizemode-75,msid-122943045/news/new-updates/nag-panchami-2025-is-it-july-28-or-29-confusion-over-date-cleared-with-full-muhurat-rituals-significance/nag-panchami.jpg">
+    </div>
+
+<p>
+Nag Panchami is dedicated to the worship of snakes (Nag Devta).
+</p>
+
+<p><b>Significance:</b> Symbolizes protection from snake bites and respect for nature.</p>
+<p><b>Traditions:</b> Offering milk and prayers to snake idols.</p>
+<p><b>Food:</b> Special vegetarian dishes.</p>
+<p><b>Celebrations:</b> Temple visits and rituals.</p>
+</div>
+<div class="content">
+<h3><b>Makar Sankranti : Harvest Festival</b></h3>
+
+<div class="makarsankranti">
+    <img src="https://newsarenaindia.com/_next/image?url=https%3A%2F%2Fimages.newsarenaindia.com%2Fsankrantijpg_1768206505574.jpg&w=1920&q=75">
+    <img src="https://static.iwmbuzz.com/wp-content/uploads/2019/01/taarak.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJo-7LzWH6WDmr2e14jnFul3bro53DXaH4Q&s">
+</div>
+
+<p>
+Makar Sankranti marks the transition of the Sun into Capricorn (Makar Rashi).
+</p>
+
+<p><b>Significance:</b> Celebrates harvest and the end of winter.</p>
+<p><b>Traditions:</b> Kite flying and exchanging til-gud.</p>
+<p><b>Food:</b> Tilgul laddoos and sweets.</p>
+<p><b>Celebrations:</b> Social gatherings and outdoor activities.</p>
+</div>
+</div>
+</details>
+</main>
+    <footer>
+        © Indian Culture | Indian Festivals
+    </footer>
+    <script>
+  const btn = document.getElementById("homeBtn");
+
+  window.onscroll = function () {
+    btn.style.display = window.scrollY > 200 ? "block" : "none";
+  };
+
+  btn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
+</body>
+</html>

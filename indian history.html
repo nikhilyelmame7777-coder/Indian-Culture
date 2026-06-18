@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian History</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background-color:#f5f0e6;
+            font-family:Georgia, serif;
+        }
+
+        header{
+            font-size:53px;
+            border:2px solid black;
+            border-radius:7px;
+            margin:14px;
+            background:linear-gradient(to right,orange,red);
+            text-align:center;
+            height:220px;
+        }
+
+        header h1{
+            color:white;
+            display:inline-block;
+            margin-top:65px;
+            text-shadow:3px 3px 5px black;
+        }
+ summary {
+    cursor: pointer;
+    list-style: none;
+}
+        h2{
+            text-align:center;
+            border:2px solid black;
+            border-radius:5px;
+            height:55px;
+            font-size:38px;
+            margin:30px;
+            background:linear-gradient(to right,orange,red);
+            color:white;
+            padding-top:3px;
+            font-family:"Roboto",sans-serif;
+        }
+
+        h2:hover{
+            transform:scale(1.02);
+        }
+
+        p{
+            font-size:22px;
+            line-height:1.8;
+            text-align:justify;
+        }
+
+        .slider{
+            display:flex;
+            overflow-x:auto;
+            gap:10px;
+            scroll-snap-type:x mandatory;
+            margin:10px;
+        }
+
+        .slider img{
+            height:300px;
+            width:360px;
+            border-radius:15px;
+            border:3px solid orange;
+            padding:5px;
+        }
+
+        .intro{
+            border:3px solid green;
+            border-radius:10px;
+            margin:12px;
+            padding:18px;
+            background-color:white;
+        }
+
+        .history{
+            border:3px solid orange;
+            border-radius:10px;
+            margin:12px;
+            padding:20px;
+            background-color:white;
+        }
+
+        .content{
+            border:3px solid black;
+            border-radius:10px;
+            margin:18px;
+            padding:20px;
+            background-color:#fffaf0;
+        }
+
+        .content img{
+            height:260px;
+            width:350px;
+            border-radius:12px;
+            border:3px solid red;
+            padding:5px;
+            margin-top:10px;
+        }
+
+        .img-row{
+            display:flex;
+            gap:12px;
+            flex-wrap:wrap;
+        }
+        .img-row img:hover{
+            transform:scale(1.02);
+        }
+
+        ul{
+            margin-left:40px;
+            font-size:22px;
+            line-height:1.8;
+        }
+
+        h3{
+            font-size:32px;
+            color:darkred;
+            margin-bottom:15px;
+            text-align:center;
+        }
+
+        details{
+            margin-bottom:20px;
+        }
+
+        summary{
+            cursor:pointer;
+            list-style:none;
+        }
+
+        footer{
+            background:black;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+            font-size:20px;
+        }
+        .home{
+    border:1px solid black ;
+    border-radius:12px;
+    padding:7px;
+    padding-left:20px;
+    width:140px;
+    background:linear-gradient(to right,rgb(244, 6, 161),red);
+    margin:5px;
+    margin-left:20px;
+    
+    
+    
+}
+.home a{
+    text-decoration:none;
+    font-size:30px;
+    color:black;
+}
+    #homeBtn{
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #95ed07;
+  color: white;
+
+  font-size: 20px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+  transition: 0.3s;
+}
+
+#homeBtn i{
+   color:white;
+}
+
+#homeBtn:hover{
+  background:#ea4a06;
+  transform:translateY(-5px);
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Indian History</h1>
+    </header>
+
+    <hr>
+
+    <div class="slider">
+
+        <img src="https://sriramakrishna.org/wp-content/uploads/2022/06/HISTORICAL-EVOLUTION-OF-INDIA-original-scaled.jpg">
+        <img src="https://rajeshivchhatrapati.wordpress.com/wp-content/uploads/2012/09/raje-bhet-2.jpg">
+        
+        <img src="https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/08/indian-history-chronology.jpg">
+
+        <img src="https://magikindia.com/wp-content/uploads/2020/05/India-map-978x800.jpg">
+
+        <img src="https://www.esamskriti.com/essays/docfile/13_5383.jpg">
+
+        <img src="https://syskool.com/wp-content/uploads/2015/01/2-12th_Madras_Native_Infantry_at_the_Battle_of_Assaye_1803._Painting_by_JC_Stadler_1780-1822_c._1815.-1.jpg">
+
+        <img src="https://preview.redd.it/5000-years-of-indian-history-v0-54oecefmluud1.jpeg?width=1080&crop=smart&auto=webp&s=8cbb66671aa79def1fa5bd3076ad869a70cf1af4">
+
+        <img src="https://www.millenniumpost.in/content/servlet/RDESController?command=rdm.Picture&app=rdes&partner=mpost&sessionId=RDWEBKJRLYKW36V6OLPDMHP3TBHH9WUOJ9NZ5&type=7&uid=19286RnyACUXbgjVUEQKAfyzg0ShWxucxYvWP7809782">
+
+        <img src="https://cdn.britannica.com/01/75501-050-26B6A00F/taj-mahal-agra-india.jpg">
+
+    </div>
+
+    <hr><hr>
+            <div class="home">
+        <a href="culture.html">Home</a>
+        </div>
+
+<button id="homeBtn">
+   <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+    <main>
+
+        <div class="intro">
+
+            <h3>Introduction</h3>
+
+            <p>
+                Indian history is one of the oldest and richest histories in the world. 
+                It reflects the growth of civilizations, powerful kingdoms, cultural traditions, 
+                scientific discoveries, spiritual knowledge, and freedom struggles that shaped modern India. 
+                From the ancient Indus Valley Civilization to the rise of great empires such as the Mauryas, 
+                Guptas, Mughals, and Marathas, Indian history shows the strength, intelligence, and unity 
+                of the Indian people.
+            </p>
+            <img src="https://preview.redd.it/5000-years-of-indian-history-v0-54oecefmluud1.jpeg?width=1080&crop=smart&auto=webp&s=8cbb66671aa79def1fa5bd3076ad869a70cf1af4">
+        </div>
+
+        <details>
+
+            <summary><h2>Ancient Indian History</h2></summary>
+
+            <div class="history">
+
+                <div class="content">
+
+                    <h3>Indus Valley Civilization</h3>
+
+                    <p>
+                        The Indus Valley Civilization was one of the earliest urban civilizations in the world. 
+                        It developed around 2500 BCE near the Indus River. Major cities included Harappa and Mohenjo-daro. 
+                        These cities had planned roads, drainage systems, brick houses, and public baths.
+                    </p>
+
+                    <div class="img-row">
+                        <img src="https://www.drishtiias.com/images/blogs/Copy-of-Copy-of-Blog-images-Final-(1).png">
+                        <img src="https://res.cloudinary.com/jerrick/image/upload/v1753103841/687e3de057638d001daa6043.png">
+                    </div>
+
+                </div>
+
+                <div class="content">
+
+                    <h3>Vedic Period</h3>
+
+                    <p>
+                        During the Vedic Period, the Vedas were composed and became the foundation of Indian philosophy, 
+                        religion, and culture. Sanskrit language developed greatly during this period. Education, meditation, 
+                        yoga, and spiritual practices became important parts of society.
+                    </p>
+
+                </div>
+
+                <div class="content">
+
+                    <h3>Maurya Empire</h3>
+
+                    <p>
+                        The Maurya Empire was founded by Chandragupta Maurya. Emperor Ashoka became one of the greatest rulers 
+                        in Indian history after adopting Buddhism following the Kalinga War. He spread the message of peace, 
+                        humanity, and non-violence across India and neighboring countries.
+                    </p>
+
+                    <div class="img-row">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Maurya_Empire%2C_c.250_BCE_network_model_v01.png">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Sarnath_capital.jpg">
+                    </div>
+
+                </div>
+
+                <div class="content">
+
+                    <h3>Gupta Empire</h3>
+
+                    <p>
+                        The Gupta Empire is known as the Golden Age of India because of major achievements in science, mathematics, 
+                        literature, astronomy, and art. Aryabhata introduced important mathematical concepts, while Kalidasa became 
+                        famous for his literary works.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </details>
+
+        <details>
+
+            <summary><h2>Medieval Indian History</h2></summary>
+
+            <div class="history">
+
+                <div class="content">
+
+                    <h3>Mughal Empire</h3>
+
+                    <p>
+                        The Mughal Empire was founded by Babur in 1526. Mughal rulers such as Akbar, Jahangir, Shah Jahan, 
+                        and Aurangzeb ruled large parts of India. Akbar promoted religious tolerance and strong administration. 
+                        Shah Jahan built the famous Taj Mahal.
+                    </p>
+
+                    
+
+                </div>
+
+                <div class="content">
+
+                    <h3>Rajput Kingdoms</h3>
+
+                    <p>
+                        Rajput rulers were known for bravery, loyalty, and sacrifice. Maharana Pratap fought courageously 
+                        against the Mughal Empire to protect the independence of his kingdom. Rajputs built magnificent forts, 
+                        temples, and palaces.
+                    </p>
+
+                </div>
+
+                <div class="content">
+
+                    <h3>South Indian Kingdoms</h3>
+
+                    <p>
+                        Powerful dynasties such as the Cholas, Cheras, Pandyas, and Vijayanagara Empire ruled South India. 
+                        They contributed greatly to temple architecture, trade, literature, music, and dance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </details>
+
+        <details>
+
+            <summary><h2>Maratha Empire and Peshwai</h2></summary>
+
+            <div class="history">
+
+                <div class="content">
+
+                    <h3>Chhatrapati Shivaji Maharaj</h3>
+
+                    <p>
+                        Chhatrapati Shivaji Maharaj founded the Maratha Empire in the 17th century. He was one of the greatest 
+                        warriors and administrators in Indian history. Shivaji Maharaj built a strong kingdom and fought bravely 
+                        against the Mughal Empire and foreign invaders.
+                    </p>
+
+                    <p>
+                        He built powerful forts such as Raigad, Sinhagad, and Pratapgad. Shivaji Maharaj respected all religions 
+                        and worked for the welfare of the people. In 1674, he was crowned at Raigad Fort as the Chhatrapati.
+                    </p>
+
+                    <div class="img-row">
+                        <img src="https://mapsforupsc.com/wp-content/uploads/2025/09/Maratha-Empire-Map.png">
+                        <img src="https://scontent.fpnq9-1.fna.fbcdn.net/v/t39.30808-6/555949080_10163339713346675_1075887202456666838_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=_IMsdHd6c3EQ7kNvwF2AxXB&_nc_oc=AdriDBz4y17lhRG-aQD7smzdFzIR96-N9s_3KhmhCuR1hRTHLp18SVFCZPCQRhrnCk4&_nc_zt=23&_nc_ht=scontent.fpnq9-1.fna&_nc_gid=oTtWdZIPZoJPCdwgbVHy5w&_nc_ss=7b289&oh=00_Af1v4-xoxJw7-fRyn9kzhm-HogcI0lRldAKXJE0yw2cj9A&oe=69F65045">
+                    </div>
+
+                </div>
+
+                <div class="content">
+
+                    <h3>Peshwa Rule</h3>
+
+                    <p>
+                        After Shivaji Maharaj, the administration of the Maratha Empire was strengthened by the Peshwas. 
+                        Pune became the center of Maratha administration and culture. Bajirao I became one of the greatest 
+                        military leaders and expanded the Maratha Empire across India.
+                    </p>
+
+                    <p>
+                        The Peshwa period saw growth in trade, art, literature, and temple construction. 
+                        Shaniwar Wada in Pune became the headquarters of the Peshwas.
+                    </p>
+
+                    <div class="img-row">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bajirao_Peshwa_Statue%2C_Pune.jpg/250px-Bajirao_Peshwa_Statue%2C_Pune.jpg">
+                        <img src="https://scontent.fpnq9-1.fna.fbcdn.net/v/t39.30808-6/481254642_963186945988478_3232000846575522282_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=T2YYdci09i4Q7kNvwGumfyI&_nc_oc=AdoBBj1-mQSw85825jsfyERc4RSR1AlnksLcnW8EiSW7LdKmM1rvhcGlmAzpnJuk5qg&_nc_zt=23&_nc_ht=scontent.fpnq9-1.fna&_nc_gid=itkt5wJKpxaR2ONpbfW2mw&_nc_ss=7b289&oh=00_Af3BTQaqKQRL4fxsx51jLUbsYDWJEJJ6UZdjRDISw6w4fQ&oe=69F62D12">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </details>
+
+        <details>
+
+            <summary><h2>Indian Freedom Struggle</h2></summary>
+
+            <div class="history">
+
+                <div class="content">
+
+                    <h3>Freedom Movement</h3>
+
+                    <p>
+                        India remained under British rule for nearly two hundred years. Freedom fighters across the country 
+                        fought bravely to achieve independence. Mahatma Gandhi led movements based on truth and non-violence.
+                    </p>
+
+                    <p>
+                        Leaders such as Bhagat Singh, Subhas Chandra Bose, Rani Lakshmibai, Bal Gangadhar Tilak, 
+                        and Sardar Vallabhbhai Patel made great sacrifices for the nation.
+                    </p>
+
+                    <p>
+                        India finally achieved independence on 15 August 1947.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </details>
+
+        <details>
+
+            <summary><h2>Historical Monuments of India</h2></summary>
+
+            <div class="history">
+
+                <div class="content">
+
+                    <h3>Famous Historical Monuments</h3>
+
+                    <ul>
+                        
+                        <li>Red Fort</li>
+                        <li>Gateway of India</li>
+                        <li>Ajanta and Ellora Caves</li>
+                        <li>Qutub Minar</li>
+                        <li>Rajgadh Fort</li>
+                        <li>Raigad Fort</li>
+                        <li>Taj Mahal</li>
+                    </ul>
+
+                    <div class="img-row">
+                        <img src="https://d18x2uyjeekruj.cloudfront.net/wp-content/uploads/2023/08/red-fort.jpg">
+                        <img src="https://wanderon-images.gumlet.io/blogs/new/2024/04/gateway-of-india.jpg">
+                        <img src="https://www.onacheaptrip.com/wp-content/uploads/Kailasa-Temple-at-Ellora-Caves-Aurangabad.jpg">
+                        <img src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017April/qutub1_042717100950.jpg">
+                        <img src="https://scontent.fpnq9-1.fna.fbcdn.net/v/t39.30808-6/490456474_1138647688275807_2246685153990178908_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=UPg8_YQaAO0Q7kNvwFNNl7-&_nc_oc=AdpxLNfKmMxEb5Uk2UbvfZzOjW_6GehGG_QIR7P0JMFVSouMSuRJdFQyxtcWhVNt7t8&_nc_zt=23&_nc_ht=scontent.fpnq9-1.fna&_nc_gid=BoE-U_qoDHzEi-Tw9LsQsQ&_nc_ss=7b289&oh=00_Af10WNktyjkMMZJzTmms_YNnvxgErghhb5pBBIbv6NO1yw&oe=69F630BD">
+                        <img src="https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl80472-Bikat-Adventures.png">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </details>
+
+    </main>
+
+    <footer>
+        © Indian Culture | Indian History
+    </footer>
+    <script>
+  const btn = document.getElementById("homeBtn");
+
+  window.onscroll = function () {
+    btn.style.display = window.scrollY > 200 ? "block" : "none";
+  };
+
+  btn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
+
+
+</body>
+</html>

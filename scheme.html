@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cultural Scheme Portal</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f1f5f9;
+    }
+
+    /* Header */
+    .top-header{
+      background:#0b3d91;
+      color:white;
+      padding:15px 40px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom:4px solid #ff9933;
+    }
+
+    .logo-section{
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+
+    .logo{
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      background:white;
+      color:#0b3d91;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:24px;
+      font-weight:bold;
+    }
+
+    .header-text h1{
+      font-size:28px;
+      margin-bottom:4px;
+    }
+
+    .header-text p{
+      font-size:14px;
+      opacity:0.9;
+    }
+
+    /* Navbar */
+    nav{
+      background:#072b68;
+      padding:12px 40px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:35px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#ffcc70;
+    }
+
+    /* Main Section */
+    .main-container{
+      width:90%;
+      max-width:1000px;
+      margin:40px auto;
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .banner{
+      background:linear-gradient(to right,#0b3d91,#1457c5);
+      color:white;
+      padding:30px;
+      text-align:center;
+    }
+
+    .banner h2{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+    .banner p{
+      font-size:16px;
+      line-height:1.6;
+    }
+
+    /* Form */
+    .form-section{
+      padding:40px;
+    }
+
+    .form-title{
+      color:#0b3d91;
+      margin-bottom:25px;
+      font-size:28px;
+      border-left:6px solid #ff9933;
+      padding-left:12px;
+    }
+
+    form{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    .full-width{
+      grid-column:1/3;
+    }
+
+    .input-group{
+      display:flex;
+      flex-direction:column;
+    }
+
+    .input-group label{
+      margin-bottom:8px;
+      font-weight:bold;
+      color:#333;
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea{
+      padding:12px;
+      border:1px solid #cbd5e1;
+      border-radius:6px;
+      font-size:15px;
+      outline:none;
+      transition:0.3s;
+    }
+
+    .input-group input:focus,
+    .input-group select:focus,
+    .input-group textarea:focus{
+      border-color:#0b3d91;
+      box-shadow:0 0 5px rgba(11,61,145,0.3);
+    }
+
+    textarea{
+      resize:none;
+      height:100px;
+    }
+
+    .submit-btn{
+      grid-column:1/3;
+      padding:14px;
+      background:#0b3d91;
+      color:white;
+      border:none;
+      border-radius:6px;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .submit-btn:hover{
+      background:#072b68;
+    }
+
+    /* Scheme Result */
+    .result-box{
+      margin-top:30px;
+      padding:20px;
+      border-radius:8px;
+      background:#e8f0ff;
+      border-left:5px solid #0b3d91;
+      display:none;
+    }
+
+    .result-box h3{
+      color:#0b3d91;
+      margin-bottom:10px;
+    }
+
+    .result-box ul{
+      margin-left:20px;
+      line-height:1.8;
+    }
+
+    /* Footer */
+    footer{
+      background:#072b68;
+      color:white;
+      text-align:center;
+      padding:18px;
+      margin-top:40px;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      form{
+        grid-template-columns:1fr;
+      }
+
+      .full-width,
+      .submit-btn{
+        grid-column:1/2;
+      }
+
+      nav ul{
+        flex-direction:column;
+        gap:12px;
+      }
+
+      .top-header{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-header">
+    <div class="logo-section">
+      <div class="logo">🇮🇳</div>
+
+      <div class="header-text">
+        <h1>Cultural Scheme Portal</h1>
+        <p>Government of India | Department of Culture & Heritage</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="culture.html">Home</a></li>
+      <li><a href="https://culture.gov.in/offering/schemes-and-services">Schemes</a></li>
+      <li><a href="Indian festivals.html">Cultural Events</a></li>
+      <li><a href="#registration">Registration</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <div class="main-container">
+
+    <div class="banner">
+      <h2>Find Government Cultural Schemes</h2>
+      <p>
+        Fill your details below to get personalized cultural schemes,
+        scholarships, grants, and opportunities provided by the Government.
+      </p>
+    </div>
+    <section id="registration">
+    <div class="form-section">
+      <h2 class="form-title">Citizen Registration Form</h2>
+
+      <form id="schemeForm">
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Age</label>
+          <input type="number" id="age" placeholder="Enter your age" required>
+        </div>
+
+        <div class="input-group">
+          <label>Gender</label>
+          <select id="gender" required>
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Caste Category</label>
+          <select id="caste" required>
+            <option value="">Select Category</option>
+            <option>General</option>
+            <option>OBC</option>
+            <option>SC</option>
+            <option>ST</option>
+            <option>EWS</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>State</label>
+          <input type="text" placeholder="Enter your state" required>
+        </div>
+
+        <div class="input-group">
+          <label>Occupation</label>
+<select id="occupation">
+
+           <option value="">Select Occupation</option>
+            <option>Student</option>
+            <option>Artist</option>
+            <option>Teacher</option>
+            <option>Musician</option>
+            <option>Dancer</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="input-group full-width">
+          <label>Area of Cultural Interest</label>
+<textarea id="interest"
+placeholder="Music, Dance, Theatre, Painting, Folk Art etc.">
+</textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Check Eligible Schemes
+        </button>
+      </form>
+
+      <!-- Result -->
+      <div class="result-box" id="resultBox">
+        <h3>Eligible Cultural Schemes</h3>
+        <ul id="schemeList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer>
+    © 2026 Cultural Scheme Portal | Government Services for Citizens
+  </footer>
+
+
+<script>
+
+const form = document.getElementById("schemeForm");
+const resultBox = document.getElementById("resultBox");
+const schemeList = document.getElementById("schemeList");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const age = parseInt(document.getElementById("age").value);
+
+    const gender =
+      document.getElementById("gender").value;
+
+    const caste =
+      document.getElementById("caste").value;
+
+    const occupation =
+      document.getElementById("occupation").value;
+
+    const interest =
+      document.getElementById("interest")
+      .value.toLowerCase();
+
+    let schemes = [];
+
+
+    /* AGE BASED */
+
+    if(age <= 18){
+        schemes.push("Bal Sanskriti Yojana");
+        schemes.push("Junior Cultural Talent Scholarship");
+    }
+
+    else if(age <= 30){
+        schemes.push("Young Artist Scholarship Scheme");
+        schemes.push("National Youth Cultural Exchange Program");
+    }
+
+    else if(age <= 50){
+        schemes.push("Professional Folk Artist Development Scheme");
+    }
+
+    else{
+        schemes.push("Senior Heritage Artist Pension Scheme");
+    }
+
+
+    /* GENDER BASED */
+
+    if(gender === "Female"){
+        schemes.push("Women Cultural Empowerment Scheme");
+    }
+
+    if(gender === "Other"){
+        schemes.push("Inclusive Cultural Participation Scheme");
+    }
+
+
+    /* CASTE BASED */
+
+    if(caste === "SC"){
+        schemes.push("SC Traditional Art Preservation Grant");
+    }
+
+    if(caste === "ST"){
+        schemes.push("Tribal Heritage and Dance Support Scheme");
+    }
+
+    if(caste === "OBC"){
+        schemes.push("Regional Cultural Growth Assistance");
+    }
+
+    if(caste === "EWS"){
+        schemes.push("Economically Weaker Artist Financial Aid");
+    }
+
+
+    /* OCCUPATION BASED */
+
+    if(occupation === "Student"){
+        schemes.push("Student Cultural Scholarship");
+    }
+
+    if(occupation === "Artist"){
+        schemes.push("National Artist Financial Assistance");
+    }
+
+    if(occupation === "Musician"){
+        schemes.push("Classical Music Promotion Scheme");
+    }
+
+    if(occupation === "Dancer"){
+        schemes.push("Traditional Dance Development Program");
+    }
+
+    if(occupation === "Teacher"){
+        schemes.push("Cultural Education Support Scheme");
+    }
+
+
+    /* INTEREST BASED */
+
+    if(interest.includes("music")){
+        schemes.push("Indian Classical Music Training Scheme");
+    }
+
+    if(interest.includes("dance")){
+        schemes.push("National Dance Talent Support");
+    }
+
+    if(interest.includes("painting")){
+        schemes.push("Visual Art and Painting Grant");
+    }
+
+    if(interest.includes("theatre")){
+        schemes.push("National Theatre Artist Welfare Scheme");
+    }
+
+    if(interest.includes("folk")){
+        schemes.push("Folk Art Preservation Mission");
+    }
+
+
+    /* DEFAULT */
+
+    schemes.push("National Cultural Participation Grant");
+
+
+    /* REMOVE DUPLICATES */
+
+    schemes = [...new Set(schemes)];
+
+
+    /* DISPLAY */
+
+    schemeList.innerHTML = "";
+
+    schemes.forEach(function(scheme){
+
+        const li = document.createElement("li");
+
+        li.textContent = scheme;
+
+        schemeList.appendChild(li);
+
+    });
+
+    resultBox.style.display = "block";
+
+});
+
+</script>
+</body>
+</html>
+

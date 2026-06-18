@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <style>
+        header{
+            height:310px;
+            text-align:center;
+            background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("https://prod.superblogcdn.com/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/image-41-3-1712752581555-compressed.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            display:block;
+            background-position:center;
+            font-size:105px;
+            border:4px solid black;
+            border-radius:20px;
+            box-shadow:0 10px 20px rgb(18, 17, 17);
+        }
+        header h1{margin:0;}
+        h1{
+            z-index:3;
+            color:white;
+            
+        }
+        .slides{
+            display:flex;
+            overflow-x:auto;
+            height:360px;
+           
+            padding:14px;
+            margin:8px;
+            gap:15px;
+            border-radius:10px;
+
+
+        }
+        
+        .slides img{
+            height:300px;
+        }
+        .cricket{
+            border:3px solid black;
+            border-radius:10px;
+            margin:7px;
+        }
+.row-img img{
+    width:250px;      
+    height:180px;
+    object-fit:cover;
+    flex-shrink:0;    }
+        img{
+            border-radius:10px;
+            height:400px;
+            margin:8px;
+            
+            
+            
+        }
+        .container,.cricket{
+            border:3px solid black;
+            gap:5px;
+            border-radius:10px;
+            margin:31px;
+            padding-left:5px;
+            width:680px;
+            
+        }
+        .row-img{
+        display:flex;
+        scroll-snap-type: mandatory;
+        overflow-x:auto;
+        flex-shrink:0;
+        gap:6px;
+        padding:9px;
+        margin:13px;
+         }
+.top-nav {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding:10px;
+  padding-left:200px;
+  background: rgb(252, 248, 248);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin:40px 40px;
+  
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  background: #333;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.top-nav a:hover {
+  background: red;
+}
+        .container img{
+            width:600px;
+            
+
+            
+        }
+        h2{
+            text-align:center;
+            background:linear-gradient(to right,rgb(244, 6, 161),red);
+            height:40px;
+            width:600px;
+            
+            padding:12px;
+            border-radius:20px;
+            font-size:30px;
+            color:white;
+            font-family:"roboto",sans-serif;
+
+
+        }
+        details{
+            margin-left:60px;
+            cursor:pointer;
+            background:white;
+            padding:0px;
+            margin:10px;
+    padding:10px;
+    border-radius:10px;
+    background:#f9f9f9;
+    width:630px;
+}
+   summary {
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    width:300px;
+}          
+
+
+    details:hover{transform:scale(1.02);}
+    footer{
+            background:black;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+            font-size:20px;
+        }
+    .allboxes{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+.home{
+    border:1px solid black ;
+    border-radius:12px;
+    padding:7px;
+    padding-left:20px;
+    width:100px;
+    background:linear-gradient(to right,rgb(244, 6, 161),red);
+    
+    
+    
+}
+.home a{
+    text-decoration:none;
+    font-size:30px;
+    color:black;
+}
+    #homeBtn{
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #95ed07;
+  color: white;
+
+  font-size: 20px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+  transition: 0.3s;
+}
+
+#homeBtn i{
+   color:white;
+}
+
+#homeBtn:hover{
+  background:#ea4a06;
+  transform:translateY(-5px);
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Sports</h1>
+    </header>
+    <br>
+    <hr>
+    
+        <div class="slides">
+        <img src="https://storage.googleapis.com/impact-news-photo/news-photo/1554710543_YFjfWS_FEATURE.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgjNhh5qXFYT2lf8CtyDUns9NSKSOygMvHuA&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAKBr2j18c640ECfOP2xPcCFPtsSvH8_SYg&s">
+        <img src="https://www.indiansportsbuzz.in/wp-content/uploads/2025/02/Sports.jpg">
+        <img src="https://contenu.nyc3.cdn.digitaloceanspaces.com/journalist/b3cf6d81-8b2c-42ba-af8a-67cf87f19371/thumbnail.jpeg">
+        <img src="https://prod.superblogcdn.com/site_cuid_clr6oh1no0006rmr89yhkxgu8/images/group-4493-1704963440126-compressed.png">
+        <img src="https://storage.googleapis.com/impact-news-photo/news-photo/7037.Cover.jpg">
+        <img src="https://i.cdn.newsbytesapp.com/images/l54920230822094301.jpeg">
+        <img src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/media-assets/image/20221008_BLP507.jpg">
+        <img src="https://miro.medium.com/1*trO2Fy4knR8AI6fkU7r5Ww.jpeg">
+        <img src="https://www.niti.gov.in/sites/default/files/styles/wide/public/2023-01/ReinvigoratingSports-inRuralAreas-cover.jpg?itok=yR_gpLtW">
+        <img src="https://images.forbesindia.com/blog/wp-content/uploads/2024/07/Indian-Athletes_CLG_SM.jpg?im=Resize,width=600,aspect=fit,type=normal">
+        <img src="https://youthincmag.com/_next/image?url=https%3A%2F%2Fmedia.youthincmag.com%2Fimages%2F7ded407f-b107-4dd2-aa6d-a049659a1044%2Flarge.webp&w=1920&q=75">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUwPyeAs9-gy1U025HUo2no0mtH8rnTWoFQ&s">
+        <img src="https://media.assettype.com/deccanherald%2F2026-01-24%2F1jmj9fw4%2Ffile7wzt797sf9h13odhffh3.jpg?rect=0%2C22%2C600%2C315&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop">
+        </div>
+        <br>
+        <div class="home">
+        <a href="culture.html">Home</a>
+        </div>
+
+        <br>
+        <div class="top-nav">
+  <a href="#hockey">Hockey</a>
+  <a href="#cricket">Cricket</a>
+  <a href="#khokho">Kho Kho</a>
+  <a href="#kabaddi">Kabaddi</a>
+  <a href="#olympics">Olympics</a>
+  <a href="#football">Football</a>
+  <a href="#badminton">Badminton</a>
+  <a href="#javelin">Javelin</a>
+  <a href="#chess">Chess</a>
+</div>
+    <main>
+<div class="allboxes">
+        <div class="container">
+<details id="hockey">
+
+    <summary><h2>🏑 Hockey </h2></summary>
+            <img src="https://c.ndtvimg.com/2024-08/05end1l_india-hockey_625x300_01_August_24.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605">
+    <h3>1. Types of Hockey</h3>
+    <ul>
+        <li><b>Field Hockey:</b> Played with 11 players per side on grass or turf.</li>
+        <li><b>Ice Hockey:</b> Played on ice with usually 6 players per side.</li>
+    </ul>
+
+    <h3>2. Equipment</h3>
+    <ul>
+        <li>Hockey stick</li>
+        <li>Protective guards (shin guards, helmets)</li>
+        <li>Gloves</li>
+        <li>Ball (field hockey) or puck (ice hockey)</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>
+        A standard field hockey match lasts <b>60 minutes</b>, divided into 
+        <b>four 15-minute quarters</b>.
+    </p>
+
+    <h3>4. Governing Bodies</h3>
+    <ul>
+        <li><b>International Hockey Federation (FIH):</b> Manages global field hockey.</li>
+        <li><b>Hockey India:</b> Oversees hockey activities in India.</li>
+    </ul>
+
+    <h3>5. Recent Developments (2026)</h3>
+    <div class="highlight">
+        <ul>
+            <li><b>India:</b> Punjab and Odisha secured medals at national championships.</li>
+            <li><b>Women’s Team:</b> Played competitive series in Buenos Aires.</li>
+            <li><b>International:</b> Argentina won gold in both men’s and women’s at the Junior Pan American Cup.</li>
+        </ul>
+    </div>
+
+    <h3>6. Key Terminology</h3>
+    <ul>
+        <li><b>Puck:</b> A hard rubber disk used in ice hockey.</li>
+        <li><b>Short Corner (Penalty Corner):</b> A common penalty in field hockey.</li>
+        <li><b>Blue Line:</b> Divides attacking and defensive zones in ice hockey.</li>
+    </ul>
+
+</div>
+</details >
+
+<div class="cricket">
+<details id="cricket">
+  <summary><h2>🏏 Cricket </h2></summary>
+    <h3>1. Types of Cricket</h3>
+    <ul>
+        <li><b>Test Cricket:</b> Played over 5 days with unlimited overs.</li>
+        <li><b>One Day Internationals (ODI):</b> 50 overs per side.</li>
+        <li><b>T20 Cricket:</b> Fast-paced format with 20 overs per side.</li>
+    </ul>
+
+    <h3>2. Equipment</h3>
+    <ul>
+        <li>Cricket bat</li>
+        <li>Ball</li>
+        <li>Stumps and bails</li>
+        <li>Protective gear (pads, gloves, helmet)</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>
+        Cricket is played between two teams of <b>11 players</b>. One team bats while the other bowls and fields.
+        The objective is to score more runs than the opponent.
+    </p>
+
+    <h3>4. Governing Bodies</h3>
+    <ul>
+        <li><b>International Cricket Council (ICC):</b> Governs international cricket.</li>
+        <li><b>BCCI (India):</b> Manages cricket in India.</li>
+    </ul>
+
+    <h3>5. Recent Developments (2026)</h3>
+    <div class="highlight">
+        <ul>
+            <li><b>India:</b> Strong performances in international series across formats.</li>
+            <li><b>IPL 2026:</b> Continues to be one of the most popular T20 leagues worldwide.</li>
+            <li><b>Global:</b> Increased focus on T20 leagues and young talent development.</li>
+        </ul>
+    </div>
+
+    <h3>6. Key Terminology</h3>
+    <ul>
+        <li><b>Over:</b> A set of 6 balls bowled by a bowler.</li>
+        <li><b>Wicket:</b> Can mean dismissal of a batsman or the stumps.</li>
+        <li><b>Run:</b> Basic unit of scoring in cricket.</li>
+        <li><b>Boundary:</b> Ball reaching the edge of the field (4 or 6 runs).</li>
+    </ul>
+    <div class="row-img">
+<img src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/lgae7l5tdeqf8pblrywu">
+<img src="https://images.icc-cricket.com/image/upload/t_ratio21_9-size30-webp/prd/xd8hnsnjxoam10keqqqy">
+<img src="https://static01.nyt.com/images/2024/06/30/multimedia/30india-cricket-cjtl/30india-cricket-cjtl-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
+<img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_720/lsci/db/PICTURES/CMS/397900/397930.4.jpg">
+<img src="https://media.assettype.com/gulfnews%2F2026-03-08%2F0uef2l45%2FIndia.jpg?w=480&auto=format%2Ccompress&fit=max">
+<img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/10/19/1001426-world-t20-2007.jpg">
+<img src="https://img.jagranjosh.com/images/2021/December/20122021/1983WorldCupIndianWinningTeam.webp">
+</div>
+</div>
+</details >
+<hr>
+
+<div class="container">
+    <details id="khokho">
+
+   <summary><h2>🏃 Kho Kho</h2></summary>
+<img src="https://www.ultimatekhokho.com/static-assets/waf-images/51/14/89/4-3/AvMFUFgZGE.png?v=1.04&w=1024">
+    <h3>1. Type</h3>
+    <p>Traditional Indian tag sport played between two teams.</p>
+
+    <h3>2. Equipment</h3>
+    <ul>
+        <li>No major equipment required</li>
+        <li>Marked rectangular field</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>Teams alternate between chasing and defending. Players aim to tag opponents quickly.</p>
+
+    <h3>4. Governing Body</h3>
+    <p>Kho Kho Federation of India</p>
+
+    <h3>5. Terminology</h3>
+    <ul>
+        <li><b>Pole:</b> Used to change direction</li>
+        <li><b>Kho:</b> Signal to pass chasing role</li>
+    </ul>
+</div>
+</details >
+
+<div class="container">
+    <details id="kabaddi">
+   <summary><h2>🤼 Kabaddi</h2></summary>
+<img src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/12/19/105636869-GettyImages-842098118.1910x1000.jpg">
+    <h3>1. Type</h3>
+    <p>Contact team sport popular in India.</p>
+
+    <h3>2. Equipment</h3>
+    <ul>
+        <li>Mat or ground court</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>A raider enters opponent’s half, tags players, and returns without being caught.</p>
+
+    <h3>4. Governing Body</h3>
+    <p>International Kabaddi Federation</p>
+
+    <h3>5. Terminology</h3>
+    <ul>
+        <li><b>Raid:</b> Attacking move</li>
+        <li><b>Tackle:</b> Defending move</li>
+    </ul>
+</div>
+</details>
+<div class="container">
+   <details id="olympics">
+    <summary><h2>🏅 Olympic Games</h2></summary>
+<img src="https://track2training.com/wp-content/uploads/2021/08/olympics-games.jpg">
+    <h3>1. Type</h3>
+    <p>International multi-sport event held every 4 years.</p>
+
+    <h3>2. Events</h3>
+    <ul>
+        <li>Athletics</li>
+        <li>Swimming</li>
+        <li>Gymnastics</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>Athletes compete for gold, silver, and bronze medals.</p>
+
+    <h3>4. Governing Body</h3>
+    <p>International Olympic Committee (IOC)</p>
+
+    <h3>5. Terminology</h3>
+    <ul>
+        <li><b>Medal:</b> Award for top performers</li>
+        <li><b>Opening Ceremony:</b> Start of Olympics</li>
+    </ul>
+</div>
+</details >
+<div class="container">
+    <details id="football">
+  <summary>  <h2>⚽ Football</h2></summary>
+<img src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/oxctjlphj3cdsuyxr6pk">
+    <h3>1. Type</h3>
+    <p>Team sport played with 11 players per side.</p>
+
+    <h3>2. Equipment</h3>
+    <ul>
+        <li>Football</li>
+        <li>Goalposts</li>
+        <li>Shin guards</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>Players aim to score goals by kicking the ball into the opponent’s net.</p>
+
+    <h3>4. Governing Body</h3>
+    <p>FIFA (Fédération Internationale de Football Association)</p>
+
+    <h3>5. Terminology</h3>
+    <ul>
+        <li><b>Goal:</b> Score point</li>
+        <li><b>Offside:</b> Rule violation</li>
+    </ul>
+</div>
+</details >
+<div class="container">
+<details id="badminton">
+<summary><h2>🏸 Badminton</h2></summary>
+<img src="https://blog.playo.co/wp-content/uploads/2024/10/Top-10-Indian-Badminton-Players-scaled.jpg">
+    <h3>1. Type</h3>
+    <p>Racket sport played individually or in doubles.</p>
+
+    <h3>2. Equipment</h3>
+    <ul>
+        <li>Racket</li>
+        <li>Shuttlecock</li>
+        <li>Net</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>Players hit the shuttlecock over the net to score points.</p>
+
+    <h3>4. Governing Body</h3>
+    <p>Badminton World Federation (BWF)</p>
+
+    <h3>5. Terminology</h3>
+    <ul>
+        <li><b>Smash:</b> Powerful shot</li>
+        <li><b>Rally:</b> Continuous play</li>
+    </ul>
+</div>
+</details >
+<div class="container">
+    <details id="javelin">
+   <summary><h2>🏹 Javelin Throw</h2></summary>
+<img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/08/07/989513-neerj-chopra.jpg">
+    <h3>1. Type</h3>
+    <p>Track and field event.</p>
+
+    <h3>2. Equipment</h3>
+    <ul>
+        <li>Javelin (spear)</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>Athletes throw the javelin as far as possible within a marked area.</p>
+
+    <h3>4. Governing Body</h3>
+    <p>World Athletics</p>
+
+    <h3>5. Terminology</h3>
+    <ul>
+        <li><b>Foul:</b> Invalid throw</li>
+        <li><b>Run-up:</b> Approach before throw</li>
+    </ul>
+</div>
+</details >
+<div class="container">
+<details id="chess">
+   <summary> <h2>♟️ Chess</h2></summary>
+<img src="https://a.espncdn.com/photo/2024/0922/r1390050_1296x729_16-9.jpg">
+    <h3>1. Type</h3>
+    <p>Strategic board game played between two players.</p>
+
+    <h3>2. Equipment</h3>
+    <ul>
+        <li>Chess board</li>
+        <li>32 pieces</li>
+    </ul>
+
+    <h3>3. Gameplay</h3>
+    <p>Players move pieces strategically to checkmate the opponent’s king.</p>
+
+    <h3>4. Governing Body</h3>
+    <p>FIDE (International Chess Federation)</p>
+
+    <h3>5. Terminology</h3>
+    <ul>
+        <li><b>Check:</b> King under threat</li>
+        <li><b>Checkmate:</b> Game-winning position</li>
+    </ul>
+</div>
+</details>
+</div>
+<button id="homeBtn">
+   <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+    </main>
+        <footer>
+        © Indian Culture | Indian Sports
+    </footer>
+<script>
+  const allDetails = document.querySelectorAll("details");
+
+  allDetails.forEach((detail) => {
+    detail.addEventListener("toggle", () => {
+      if (detail.open) {
+        allDetails.forEach((otherDetail) => {
+          if (otherDetail !== detail) {
+            otherDetail.removeAttribute("open");
+          }
+        });
+
+        detail.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+const homeBtn = document.getElementById("homeBtn");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 300){
+        homeBtn.style.display = "flex";
+    }
+    else{
+        homeBtn.style.display = "none";
+    }
+
+});
+
+homeBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+</script>
+</body>
+</html>

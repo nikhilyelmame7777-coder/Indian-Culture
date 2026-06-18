@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <style>
+      header{
+        text-align:center;
+        border:2px solid rgb(248, 5, 5);
+        border-radius:8px;
+        margin:7px;
+        background:linear-gradient(to right,orange,red);
+      }  
+      h1{
+        font-size:100px;
+        color:rgb(243, 243, 244)
+      }
+      h2{
+        text-align:center;
+        background:linear-gradient(to right,rgb(237, 7, 176),red);
+        color:white;
+        border-radius:10px;
+        height:68px;
+        width:1000px;
+        padding:5px;
+        margin-left:200px;
+
+      }
+      h3{
+        text-align:center;
+        background-color:orangered;
+        border-radius:10px;
+        height:60px;
+        width:840px;
+        margin-left:240px;
+        color:whitesmoke;
+        font-size:40px;
+
+
+      }
+      h4{
+        background:rgb(225, 48, 154);
+        display:inline-block;
+        padding:17px;
+        margin:10px;
+        border:2px solid red;
+        border-radius:20px;
+        width:300px;
+        text-align:center;
+      }
+      .views{
+        display:flex;
+        height:360px;
+        overflow-x:auto;
+        padding:3px;
+        margin:8px;
+        background-color:#c6d4d5;
+        border-radius :8px;
+        
+      }
+      img{
+        border:2px solid red;
+        border-radius:8px;
+        transition:0.3s;
+        margin:6px;
+        height:330px;
+
+      }
+      img:hover{
+        transform:scale(1.02) ;
+      }
+      .img-row{
+    display:flex;
+    overflow-x:auto;
+    gap:10px;
+}
+      
+
+      .modern{
+        display:flex;
+        overflow-x:auto;
+        padding:5.4px;
+        margin:8px;
+        background-color:silver;
+
+      }
+      .art{
+        border:3px solid orange;
+        border-radius:6px;
+        padding:10px;
+        margin:8px;
+        font-size:20px;
+      }
+      .dance{
+        border:3px solid rgb(246, 39, 16);
+        border-radius:9px;
+        padding:10px;
+        margin:13px;
+
+      }
+
+      .classic{
+        border:3px solid orange;
+        padding:10px;
+        font-size:24px;
+      }
+      .dance-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 25px;
+    width:500px;
+    margin-left:160px;
+
+}
+summary{
+  cursor: pointer;
+  padding:0px;
+  margin:4px;
+ 
+}
+summary:hover{
+ transform:scale(1.02);
+}
+ summary {
+    cursor: pointer;
+    list-style: none;
+}
+  footer{
+      background:black;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:20px;
+      font-size:20px;
+    }
+    #homeBtn{
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #95ed07;
+  color: white;
+
+  font-size: 20px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+  transition: 0.3s;
+}
+
+#homeBtn i{
+   color:white;
+}
+
+#homeBtn:hover{
+  background:#ea4a06;
+  transform:translateY(-5px);
+}
+.home{
+    border:1px solid black ;
+    border-radius:12px;
+    padding:7px;
+    padding-left:20px;
+    width:100px;
+    background:linear-gradient(to right,rgb(244, 6, 161),red);    
+}
+.home a{
+  text-decoration:none;
+  font-size:30px;
+  color:black;
+}
+a:hover{
+  transform:scale(1.03);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Indian Arts</h1>
+    </header>
+    <hr>
+    <div class="views">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg/250px-Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bodhi_Ajanta.jpg/250px-Bodhi_Ajanta.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg/250px-Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Brooklyn_Museum_-_Arghan_Div_Brings_the_Chest_of_Armor_to_Hamza.jpg/330px-Brooklyn_Museum_-_Arghan_Div_Brings_the_Chest_of_Armor_to_Hamza.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Portrait_of_Abu%27l_Hasan%2C.jpg/250px-Portrait_of_Abu%27l_Hasan%2C.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Andhra_Pradesh_Royal_earrings_1st_Century_BCE.jpg/500px-Andhra_Pradesh_Royal_earrings_1st_Century_BCE.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/A_Warli_painting_by_Jivya_Soma_Mashe%2C_Thane_district.jpg/500px-A_Warli_painting_by_Jivya_Soma_Mashe%2C_Thane_district.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sarnath_capital.jpg/330px-Sarnath_capital.jpg">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*WB2Hctu4c7NDn4ZEiKZthg.jpeg">
+        <img src="https://i.pinimg.com/474x/6a/32/02/6a3202862398658aaff8d694ae5d7ec1.jpg">
+        <img src="https://cdn.shopify.com/s/files/1/0249/0315/5797/files/image9_29fabc62-0f76-4d42-8816-4f9f67e98294.png?v=1727522046">
+        <img src="https://www.abirspace.com/cdn/shop/articles/collage-1024x768.jpg?v=1690545960">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2s4eJWorB_6WJ3OtJsqQUE50YuWG9TAu6Ug&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQid5hrIOdTPXqk_JnNFipQBkzfrkUwrgBSeQ&s">
+
+    </div>
+    <main>
+      <div class="home">
+        <a href="culture.html">Home</a>
+      </div>
+      <div class="art">
+      <p><b>Indian art is a diverse tapestry of painting, sculpture, pottery, and textiles spanning thousands of years, deeply rooted in spiritual, philosophical, and natural themes. It encompasses traditional folk arts like Madhubani and Warli, alongside intricate classical miniatures, modern, and contemporary styles, representing a rich, evolving cultural identity. </b></p>
+      <details>
+        <summary><h3><b>Indian Art:Qualitative Analysis</b></h3></summary>
+        <ul>
+  <li><b>Diverse Painting Styles:</b>
+    <ul>
+      <li>Madhubani (Bihar) – vibrant and colorful</li>
+      <li>Warli (Maharashtra) – simple, rural art</li>
+      <li>Pattachitra (Odisha/Bengal) – mythological themes</li>
+      <li>Miniature paintings – detailed and intricate</li>
+    </ul>
+  </li>
+
+  <li><b>Spirituality & Nature:</b>
+    <ul>
+      <li>Art reflects divine beauty</li>
+      <li>Shows interconnectedness of life</li>
+      <li>Focuses on spiritual rather than material reality</li>
+    </ul>
+  </li>
+
+  <li><b>Geographical Scope:</b>
+    <ul>
+      <li>India</li>
+      <li>Pakistan</li>
+      <li>Bangladesh</li>
+      <li>Nepal</li>
+      <li>Sri Lanka</li>
+    </ul>
+  </li>
+
+  <li><b>Sculpture & Design:</b>
+    <ul>
+      <li>Ancient cave temples (Ajanta & Ellora)</li>
+      <li>Bronze sculptures</li>
+      <li>Modern artistic interpretations</li>
+    </ul>
+  </li>
+
+  <li><b>Cultural Preservation:</b>
+    <ul>
+      <li>Passed down through generations</li>
+      <li>Community-based practice</li>
+      <li>Supported by government initiatives</li>
+    </ul>
+  </li>
+</ul>
+   </div>
+<div class="classic">
+  <details>
+<summary><h2>Classical Arts</h2></summary>
+<div class="img-row">
+<img src="https://www.artzolo.com/cdn/shop/articles/capturing-the-rhythm-paintings-showing-indian-dance-forms-and-their-evolution-artzolo-com_6a5c7786-f676-44cb-8682-cb1cd84556ff.jpg?v=1738751694">
+<img src="https://pracheetiodissi.com/wp-content/uploads/2023/05/Prachetti-1.jpg">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Bz-h1VaFC_EZjSTdDUHI3xn2gq6Os_QpZQ&s">
+<img src="https://www.cheggindia.com/wp-content/uploads/2023/12/gk-45854-classical-dance-of-india-v4.jpg">
+<img src="https://lotusarise.com/wp-content/uploads/2024/05/Eight-classical-dances-of-India-recognised-by-Sangeet-Natak-Academy-754x1024.png">
+<img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-62682525/62682525.jpg">
+<img src="https://thepatriot.in/wp-content/uploads/2022/11/shiva-event.jpg">
+</div>
+<details>
+<summary><h3><b>Dance</b></h3></summary>
+<div class="dance-container">
+<div class="dance">
+<h4><b>1.Bharatnatyam</b></h4>
+<img src="https://kalyanikalamandir.com/wp-content/uploads/2023/09/130.jpg">
+<p><b>Key Aspects of Bharatanatyam:</b></p>
+
+<ul>
+    <li>
+        <b>Origin:</b> Codified in the Natya Shastra, Bharatanatyam was historically performed by Devadasis (temple dancers).
+    </li>
+
+    <li>
+        <b>Components:</b>
+        <ul>
+            <li><b>Nritta:</b> Technical, pure dance movements without emotion.</li>
+            <li><b>Nritya:</b> Expressional dance using gestures and facial expressions (Abhinaya).</li>
+            <li><b>Natya:</b> Dramatic storytelling.</li>
+        </ul>
+    </li>
+
+    <li>
+        <b>Technique:</b> Characterized by a half-sitting posture called Aramandi (Ardhamandala).
+    </li>
+
+    <li>
+        <b>Performance Elements:</b>
+        <ul>
+            <li><b>Costumes:</b> Bright stitched sarees with a fan-like pleated cloth that opens during movement.</li>
+            <li><b>Jewelry:</b> Traditional temple jewelry including headpieces, nose rings, and earrings.</li>
+            <li><b>Music:</b> Accompanied by classical Carnatic music.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="dance">
+
+<h4><b>2.Kathak</b></h4>
+<br>
+<img src="https://www.drishtiias.com/images/uploads/1642151558_kathak_drishti_ias_english.jpg">
+
+<p><b>Key Aspects of Kathak:</b></p>
+
+<ul>
+    <li><b>Origin:</b> Uttar Pradesh, North India.</li>
+
+    <li>
+        <b>History:</b> Developed from ancient storytellers called Kathakars.
+    </li>
+
+    <li>
+        <b>Style:</b> Focuses on storytelling through graceful movements and expressions.
+    </li>
+
+    <li>
+        <b>Technique:</b> Fast footwork, spins (chakkars), and use of ghungroos.
+    </li>
+
+    <li>
+        <b>Performance Elements:</b>
+        <ul>
+            <li><b>Costume:</b> Flowing lehenga or Anarkali dress.</li>
+            <li><b>Music:</b> Hindustani classical music.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="dance">
+
+<h4><b>3. Kathakali</b></h4>
+<img src="https://robinage.com/wp-content/uploads/2022/09/Kathakali.jpg">
+
+<p><b>Key Aspects of Kathakali:</b></p>
+
+<ul>
+    <li><b>Origin:</b> Kerala.</li>
+
+    <li>
+        <b>Style:</b> Classical dance-drama known for dramatic storytelling.
+    </li>
+
+    <li>
+        <b>Features:</b> Elaborate makeup, large headgear, and colorful costumes.
+    </li>
+
+    <li>
+        <b>Theme:</b> Based on epics like Ramayana and Mahabharata.
+    </li>
+
+    <li>
+        <b>Performance Elements:</b>
+        <ul>
+            <li><b>Expressions:</b> Strong facial expressions and hand gestures.</li>
+            <li><b>Music:</b> Traditional percussion-based music.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="dance">
+
+<h4><b>4. Kuchipudi</b></h4>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Kuchipudi_Performer_DS.jpg">
+
+<p><b>Key Aspects of Kuchipudi:</b></p>
+
+<ul>
+    <li><b>Origin:</b> Andhra Pradesh.</li>
+
+    <li>
+        <b>Style:</b> Combination of dance and drama.
+    </li>
+
+    <li>
+        <b>Technique:</b> Graceful movements with expressive gestures.
+    </li>
+
+    <li>
+        <b>Special Feature:</b> Dancing on a brass plate (Tarangam).
+    </li>
+
+    <li>
+        <b>Performance Elements:</b>
+        <ul>
+            <li><b>Costume:</b> Similar to Bharatanatyam.</li>
+            <li><b>Music:</b> Carnatic classical music.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="dance">
+
+<h4><b>5. Manipuri</b></h4>
+<br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs_QTl_RoCUC2W7u5DutcLO1-WybYVxMsDHw&s">
+
+<p><b>Key Aspects of Manipuri:</b></p>
+
+<ul>
+    <li><b>Origin:</b> Manipur.</li>
+
+    <li>
+        <b>Style:</b> Soft, graceful, and devotional dance form.
+    </li>
+
+    <li>
+        <b>Theme:</b> Based on Radha-Krishna stories.
+    </li>
+
+    <li>
+        <b>Technique:</b> Gentle movements with minimal facial expressions.
+    </li>
+
+    <li>
+        <b>Performance Elements:</b>
+        <ul>
+            <li><b>Costume:</b> Cylindrical skirts and delicate designs.</li>
+            <li><b>Music:</b> Devotional and classical music.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="dance">
+
+<h4><b>6. Mohini natyam</b></h4>
+<img src="https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Fmobile%2Fmohiniyattam-1723022602_26cdae1f40c339b47399.webp&w=3840&q=75">
+
+<p><b>Key Aspects of Mohiniyattam:</b></p>
+
+<ul>
+    <li><b>Origin:</b> Kerala.</li>
+
+    <li>
+        <b>Style:</b> Graceful and feminine dance form.
+    </li>
+
+    <li>
+        <b>Technique:</b> Slow, flowing movements with expressions.
+    </li>
+
+    <li>
+        <b>Theme:</b> Based on love and devotion.
+    </li>
+
+    <li>
+        <b>Performance Elements:</b>
+        <ul>
+            <li><b>Costume:</b> White saree with golden border.</li>
+            <li><b>Music:</b> Carnatic music.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="dance">
+<h4><b>7. Bhangra</b></h4>
+<img src="https://www.ganeshaspalace.com/cultural-tours/images/bhangra3.jpg">
+
+<p><b>Key Aspects of Bhangra:</b></p>
+
+<ul>
+    <li><b>Origin:</b> Punjab.</li>
+
+    <li>
+        <b>Type:</b> Folk dance.
+    </li>
+
+    <li>
+        <b>Style:</b> Energetic and lively movements.
+    </li>
+
+    <li>
+        <b>Occasion:</b> Harvest festival (Baisakhi).
+    </li>
+
+    <li>
+        <b>Performance Elements:</b>
+        <ul>
+            <li><b>Music:</b> Dhol beats and Punjabi songs.</li>
+            <li><b>Costume:</b> Bright and colorful outfits.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="dance">
+
+<h4><b>8. Lavani</b></h4>
+<img src="https://blackhattalent.com/wp-content/uploads/2024/11/Lavani-Dance-Artists.webp">
+
+<p><b>Key Aspects of Lavani:</b></p>
+
+<ul>
+    <li><b>Origin:</b> Maharashtra.</li>
+
+    <li>
+        <b>Type:</b> Folk dance.
+    </li>
+
+    <li>
+        <b>Style:</b> Fast-paced dance with strong expressions.
+    </li>
+
+    <li>
+        <b>Theme:</b> Love, social issues, and emotions.
+    </li>
+
+    <li>
+        <b>Performance Elements:</b>
+        <ul>
+            <li><b>Music:</b> Dholki rhythm.</li>
+            <li><b>Costume:</b> Nauvari saree.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+</div>
+  </details>
+
+</details>
+
+  </details>
+      <div class="art">
+  <details><
+<summary><h3><b>Rock Art</b></h3></summary>
+<ul>
+  <li><b>Introduction to Rock Art:</b>
+    <ul>
+      <li>Rock art refers to human-made drawings, carvings, or paintings created on natural rock surfaces.</li>
+      <li>It is one of the earliest forms of human artistic expression.</li>
+    </ul>
+  </li>
+
+  <li><b>Types of Rock Art:</b>
+    <ul>
+      <li><b>Pictographs:</b> Paintings made using natural pigments.</li>
+      <li><b>Petroglyphs:</b> Designs carved or engraved into rock.</li>
+      <li><b>Geoglyphs:</b> Large designs created on the ground using rocks or earth.</li>
+    </ul>
+  </li>
+
+  <li><b>Features:</b>
+    <ul>
+      <li>Simple yet expressive figures of humans, animals, and hunting scenes.</li>
+      <li>Use of natural colors like red, white, and ochre.</li>
+      <li>Reflects daily life, rituals, and beliefs of early humans.</li>
+    </ul>
+  </li>
+
+  <li><b>Rock Art in India:</b>
+    <ul>
+      <li>Famous sites include Bhimbetka Rock Shelters (Madhya Pradesh).</li>
+      <li>Depicts hunting, dancing, music, and community life.</li>
+      <li>Some paintings are over 10,000 years old.</li>
+    </ul>
+  </li>
+
+  <li><b>Significance:</b>
+    <ul>
+      <li>Provides insight into prehistoric human life and culture.</li>
+      <li>Helps understand early communication and symbolism.</li>
+      <li>Important archaeological and cultural heritage.</li>
+    </ul>
+  </li>
+</ul>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Rock_Shelter_8%2C_Bhimbetka_02.jpg/500px-Rock_Shelter_8%2C_Bhimbetka_02.jpg">
+</div>
+</details>
+
+<hr>
+      <div class="art">
+<details>
+    <summary><h3><b>Mauryan art </b></h3></summary>
+    <ul>
+  <li><b>Introduction:</b>
+    <ul>
+      <li>Mauryan Art developed during the Mauryan Empire (322–185 BCE).</li>
+      <li>It reached great heights under Emperor Ashoka.</li>
+      <li>Marks the beginning of large-scale stone art in India.</li>
+    </ul>
+  </li>
+
+  <li><b>Characteristics:</b>
+    <ul>
+      <li>Highly polished stone surfaces (Mauryan polish).</li>
+      <li>Strong influence of nature and realism.</li>
+      <li>Use of massive monolithic structures.</li>
+    </ul>
+  </li>
+
+  <li><b>Pillars:</b>
+    <ul>
+      <li>Famous Ashokan pillars made of sandstone.</li>
+      <li>Decorated with animal capitals like lions, bulls, and elephants.</li>
+      <li>Example: Lion Capital of Sarnath (National Emblem of India).</li>
+    </ul>
+  </li>
+
+  <li><b>Sculpture:</b>
+    <ul>
+      <li>Human and animal figures show realism and fine detailing.</li>
+      <li>Yaksha and Yakshi statues are notable examples.</li>
+    </ul>
+  </li>
+
+  <li><b>Architecture:</b>
+    <ul>
+      <li>Rock-cut caves like Barabar Caves in Bihar.</li>
+      <li>Early stupas such as Sanchi Stupa (later expanded).</li>
+    </ul>
+  </li>
+
+  <li><b>Significance:</b>
+    <ul>
+      <li>Represents the transition from wood to stone architecture.</li>
+      <li>Shows royal patronage and spread of Buddhism.</li>
+      <li>Influenced later Indian art and architecture.</li>
+    </ul>
+  </li>
+</ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Pataliputra_capital%2C_Bihar_Museum%2C_Patna%2C_3rd_century_BCE.jpg/500px-Pataliputra_capital%2C_Bihar_Museum%2C_Patna%2C_3rd_century_BCE.jpg">
+    <hr>
+    </div>
+  </details>
+          <div class="art">
+<details>
+    <summary><h3><b>Buddhist art</b></h3></summary>
+    <ul>
+  <li><b>Origin & Purpose 🌼</b>
+    <ul>
+      <li>Developed after the teachings of Gautama Buddha.</li>
+      <li>Created mainly to spread Buddhist philosophy and values.</li>
+      <li>Focus on peace, compassion, and enlightenment.</li>
+    </ul>
+  </li>
+
+  <li><b>Key Symbols Instead of Images (Early Phase)</b>
+    <ul>
+      <li>Bodhi Tree – enlightenment</li>
+      <li>Footprints – presence of Buddha</li>
+      <li>Dharma Chakra (wheel) – teachings of Buddha</li>
+      <li>Empty throne – Buddha’s spiritual existence</li>
+    </ul>
+  </li>
+
+  <li><b>Human Form of Buddha (Later Phase)</b>
+    <ul>
+      <li>Buddha shown in calm and meditative postures.</li>
+      <li>Different mudras (hand gestures) express meanings.</li>
+      <li>Two major styles: Gandhara (Greek influence) and Mathura (Indian style).</li>
+    </ul>
+  </li>
+
+  <li><b>Architecture & Structures 🏛️</b>
+    <ul>
+      <li>Stupas – dome-shaped structures for relics (e.g., Sanchi).</li>
+      <li>Chaityas – prayer halls.</li>
+      <li>Viharas – monasteries for monks.</li>
+    </ul>
+  </li>
+
+  <li><b>Famous Art Sites 🎨</b>
+    <ul>
+      <li>Ajanta Caves – paintings of Jataka tales.</li>
+      <li>Ellora Caves – rock-cut Buddhist, Hindu, and Jain art.</li>
+      <li>Sanchi – famous for stupas and gateways.</li>
+    </ul>
+  </li>
+
+  <li><b>Core Message 🌿</b>
+    <ul>
+      <li>Art reflects simplicity and inner peace.</li>
+      <li>Focus is on spiritual growth rather than decoration.</li>
+      <li>Encourages detachment from worldly desires.</li>
+    </ul>
+  </li>
+</ul>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nationalmuseum_Neu-Delhi_2017-12-27u.jpg/500px-Nationalmuseum_Neu-Delhi_2017-12-27u.jpg">
+      </div>
+      </details>
+
+<hr>
+      <div class="art">
+<details>
+<summary><h3><b>Mughal art</b></h3></summary>
+<p>
+Mughal art developed during the Mughal Empire and is known for its rich blend of Persian, Islamic, and Indian styles.
+</p>
+
+<p><b>Main Mughal Art Styles:</b></p>
+<ul>
+    <li><b>Miniature Painting:</b> Small, detailed paintings showing royal life, battles, and nature.</li>
+    <li><b>Architecture:</b> Famous for domes, arches, symmetry, and gardens (e.g., Taj Mahal).</li>
+    <li><b>Decorative Arts:</b> Includes textiles, carpets, jewelry with floral and geometric designs.</li>
+    <li><b>Calligraphy:</b> Artistic use of Arabic and Persian scripts in manuscripts and buildings.</li>
+</ul>
+
+<p>
+These styles focused on beauty, precision, and detailed craftsmanship.
+</p>
+
+<p><b>Influence on Modern Design:</b></p>
+<ul>
+    <li><b>Interior Design:</b> Use of arches, jali patterns, and floral decorations in homes and hotels.</li>
+    <li><b>Fashion:</b> Embroidery styles like zardozi and rich royal color combinations.</li>
+    <li><b>Graphic Design:</b> Symmetry, borders, and Mughal patterns used in invitations and logos.</li>
+    <li><b>Architecture:</b> Modern buildings inspired by domes, gardens, and balanced layouts.</li>
+</ul>
+
+<p>
+Mughal art continues to influence modern creativity because of its timeless elegance and detailed artistic style.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Govardhan._Jahangir_Visiting_the_Ascetic_Jadrup._ca._1616-20%2C_Musee_Guimet%2C_Paris.jpg">
+<img src="https://5.imimg.com/data5/VT/IK/MO/SELLER-21773357/a-500x500.jpg">
+    </div>
+      </details>
+
+    <hr>
+      <div class="art">
+        <details>
+   <summary> <h3><b>Modern & contemporary art</b></h3></summary>
+    <p>
+Modern and contemporary Indian art show the shift from traditional styles to more creative and experimental expressions.
+</p>
+
+<p><b>Modern Indian Art:</b></p>
+<ul>
+    <li>Began in the late 19th and early 20th centuries.</li>
+    <li>Focused on new techniques and individual creativity.</li>
+    <li>Moved away from traditional and classical styles.</li>
+    <li>Influenced by both Indian culture and Western art forms.</li>
+</ul>
+
+<p><b>Contemporary Indian Art:</b></p>
+<ul>
+    <li>Represents present-day artistic expressions.</li>
+    <li>Includes painting, digital art, installations, and mixed media.</li>
+    <li>Focuses on themes like society, politics, identity, and environment.</li>
+    <li>Encourages experimentation and new ideas.</li>
+</ul>
+
+<p>
+Both modern and contemporary art reflect how Indian artists combine tradition with innovation, making art more dynamic and relevant today.
+
+</p>
+<div class="modern">
+<img src="https://m.media-amazon.com/images/I/81gi8NfPpIL._AC_UF894,1000_QL80_.jpg">
+<img src="https://www.tallengestore.com/cdn/shop/products/TheKaleidoscopeThatIsUs-ModernArtContemporaryPainting_946da9f3-55d4-4b72-b4a8-774e172c8804.jpg?v=1643290965">
+<img src="https://i.etsystatic.com/11867618/r/il/c19f6e/3871324283/il_fullxfull.3871324283_pjer.jpg">
+<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcot6Fxu2RwGO7SuHa3Q1e1MmH6BB55Qg1KRgWmAorsGkuQJ6dBqfZRSE4rX14lx5E358OpONi4vWW-0jlm9cjYpljy2j_gKejDXOE6OLeATU3oT2efUR8_7grB32fzLOsIq7vY?key=rsin6iOewnZx508oJll35A">
+<img src="https://5.imimg.com/data5/SELLER/Default/2022/7/HQ/FV/QR/8842060/vrj128-15x15-f.jpg">
+<img src="https://indianartideas.in/images/blog/Divine%20Tune%20Series.jpg">
+</div>
+</div>
+  
+
+<hr>
+      <div class="art">
+<details>
+<summary><h3><b>Handcrafts Art</b></h3></summary>
+<p>
+Handicrafts are an important part of Indian art, representing traditional skills passed down through generations. They reflect the culture, creativity, and craftsmanship of different regions of India.
+</p>
+
+<p><b>Types of Handicrafts:</b></p>
+<ul>
+    <li><b>Textiles:</b> Includes handwoven fabrics, embroidery, and printing styles like silk, cotton, and wool-based designs.</li>
+    <li><b>Pottery:</b> Clay items such as pots, vases, and decorative pieces, often handmade and painted with traditional patterns.</li>
+    <li><b>Jewelry:</b> Traditional ornaments made from gold, silver, beads, and stones, featuring intricate and artistic designs.</li>
+</ul>
+
+<p><b>Features of Indian Handicrafts:</b></p>
+<ul>
+    <li>Handmade with great skill and precision.</li>
+    <li>Use of natural and locally available materials.</li>
+    <li>Rich in cultural and regional identity.</li>
+    <li>Often includes detailed patterns and artistic designs.</li>
+</ul>
+
+<p>
+Handicrafts not only preserve cultural heritage but also support local artisans and contribute to the economy.
+</p>
+<img src="https://www.ibef.org/uploads/blog/1756898164_09b77f5350cff39fcbdf.png">
+<img src="https://www.gitagged.com/wp-content/uploads/2018/07/Bastar-Wooden-Craft-Online-1.jpg">
+<img src="https://i.pinimg.com/236x/84/de/d3/84ded37b8b9bcd39f9912bc6d4865a03.jpg">
+
+</div>
+  </details>
+
+<hr>
+<button id="homeBtn">
+   <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+</main>
+    <footer>
+        © Indian Culture | Indian Art
+    </footer>
+    <script>
+  const btn = document.getElementById("homeBtn");
+
+  window.onscroll = function () {
+    btn.style.display = window.scrollY > 200 ? "block" : "none";
+  };
+
+  btn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
+
+</body>
+</html>

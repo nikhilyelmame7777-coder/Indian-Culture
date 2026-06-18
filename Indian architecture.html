@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <style>
+        h1{
+            
+            z-index:10;
+            color:rgb(252, 248, 248);
+            text-align:center;
+            display:inline-block;
+            padding:10px;
+            border-radius:5px;
+            margin:13px;
+            padding:4px;
+        }
+        header{
+            font-size:53px;
+            border:2px solid black;
+            border-radius:7px;
+            margin:14px;
+            background:linear-gradient(to right,orange,red);
+            background-size:cover;
+            background-position:center;
+            text-align:center;
+            height:220px;
+
+        }
+        h2:hover{
+            transform:scale(1.02);
+        }
+        img{ 
+            height:300px;
+            width:350px;
+            padding:5px;
+            border-radius:15px;
+            border:2px solid (#8B0000);
+        }
+        .slider{
+            display:flex;
+            overflow-x:auto;
+            scroll-snap-type:x mandatory;
+            gap:10px
+        }
+        .Ascient{
+            border:3px solid orange;
+            border-radius:13px;
+            font-family:"roboto",sans-serif;
+            margin:10px; 
+            padding:19px;
+            font-weight: 500;
+            font-size:20px;
+            
+        }
+        .modern{
+            border:3px solid black;
+            border-radius:10px;
+            margin:8px;
+            padding:14px;
+            font-weight: 500;
+        }
+        h2{
+            text-align:center;
+            border:2px solid black;
+            border-radius:5px;
+            height:50px;
+            font-size: 40px;
+            font-family:"Roboto",sans-serif;
+            margin:50px;
+            background: linear-gradient(to right, orange, red);
+            color:white;    
+
+        }
+        .lotus,.capitol,.skyline{
+            border:3px solid rgb(234, 8, 8);
+            border-radius:10px;
+            padding:8px;
+            font-family: "roboto",sans-serif;
+            margin:8px;
+
+
+        }
+        .content{
+            border:3px solid black;
+            border-radius:10px;
+            margin:10px;
+            padding:10px;
+            
+        }
+        .temple{
+            border:3px solid black;
+            border-radius:10px;
+            margin:10px;
+            padding:10px;
+            
+        }
+        .img-row{
+            display:flex;
+            gap:10px;
+            
+        }
+        .Intro{
+            border:3px solid green;
+            border-radius:9px;
+            font-family:"roboto",sans-serif;
+            margin:8px;
+            padding:8px;
+
+        }
+        .info{
+            border:3px solid orange;
+            border-radius:8px;
+            margin:12px;
+            padding:13px;
+            font-family:"Roboto", serif;
+            font-size:23px;
+        }
+        .architect{
+            border:3px solid orangered;
+            border-radius:10px;
+            font-family:"Roboto", sans-serif;
+            font-weight: 500;
+            font-size:20px;
+            margin:8px;
+            padding:7px;
+        }
+        summary {
+    cursor: pointer;
+    list-style: none;
+}
+.home{
+    border:1px solid black ;
+    border-radius:12px;
+    padding:7px;
+    padding-left:20px;
+    width:100px;
+    background:linear-gradient(to right,rgb(244, 6, 161),red);  
+}
+
+.home a{
+    text-decoration:none;
+    font-size:30px;
+    color:black;
+}
+
+    footer{
+            background:black;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+            font-size:20px;
+        }
+            #homeBtn{
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #95ed07;
+  color: white;
+
+  font-size: 20px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+  transition: 0.3s;
+}
+
+#homeBtn i{
+   color:white;
+}
+
+#homeBtn:hover{
+  background:#ea4a06;
+  transform:translateY(-5px);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Indian Architecture</h1>
+    </header>
+    <hr>
+    <div class="slider">
+    <img src="https://www.triptotemples.com/_next/image?url=https%3A%2F%2Fcdn.triptotemples.com%2Fblogs%2Fbanner-image-68a94ec63548690bc4c576af-79584280.webp&w=1920&q=75">
+    <img src="https://media.cnn.com/api/v1/images/stellar/prod/240123104144-03-ayodhya-temple-india.jpg?q=w_1110,c_fill">
+    <img src="https://www.morphogenesis.org/wp-content/uploads/2025/06/image211.jpg">
+    <img src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1452676498043/shutterstock-75134353_main_1452676507626.jpeg">
+    <img src="https://www.templepurohit.com/wp-content/uploads/2016/08/Hindu-Temple-Architecture-Indian-Temple-Architecture-1.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqI1sHzGWjdzT8aYwGqaW8uU0MVwn2gq50Dw&s">
+    <img src="https://mathurahub.com/wp-content/uploads/2025/06/char-dham-temple-vrindavan.jpg">
+    <img src="https://static.toiimg.com/photo/msid-109785662,width-96,height-65.cms">
+    <img src="https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/zz-1715746120819.jpg">
+    <img src="https://www.thrillophilia.com/blog/wp-content/uploads/2014/07/Hampi-1024x577.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCy7-0V0gN5MqHm-QEo7doiO1kAc_adFac9w&s">
+    <img src="https://scontent.fpnq13-6.fna.fbcdn.net/v/t39.30808-6/487126332_1085178686969500_8033266863529825788_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=pa9XsIKZOYYQ7kNvwGlED4i&_nc_oc=AdpE_0GTWq7nrwv_vwOuXlBEAaNKCS_RJEdJK8U5qYZHf9LU04Jztcl_GfBdaKL0iavxBy03pKWzOj4Hf8PVQyT2&_nc_zt=23&_nc_ht=scontent.fpnq13-6.fna&_nc_gid=mGuue8G14Mjz5ixUAVCCmw&_nc_ss=7a389&oh=00_Af2Oa9uvKbnRLTpd66jPw6oq3xFLJzj-TG0y7XPHJXcz7A&oe=69E96825">
+    <img src="https://cdn.thedecorjournalindia.com/wp-content/uploads/2025/03/A-Journey-Through-Shivaji-Maharajs-Forts_Tales-of-Valor-Innovation-and-Strategic-Brilliance-8.jpg?strip=all&lossy=1&resize=900%2C1000&ssl=1">
+    <img src="https://yogeshrautgroup.wordpress.com/wp-content/uploads/2018/09/raigad2604003646457652367.jpg?w=640">
+    <img src="https://www.holidify.com/images/cmsuploads/compressed/6799416268_822e8d98f5_b_20180814155943.jpg">
+    <img src="https://www.hercircle.in/hcm/Engage/D/45F4E0AF-1398-45B3-8C6F-EDA6F085C981.JPG">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZKMQ4EJ8bH4RFfog-DT4ITqjbPz2RRZDLA&s">
+    <img src="https://cdn.britannica.com/75/152475-004-C81558D9.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Front_view_of_Shaniwar_Wada_illuminated.jpg">
+    <img src="https://assets.architecturaldigest.in/photos/67ab49493cf67a65c4deaee7/master/w_1600%2Cc_limit/GettyImages-522676842.jpg">
+    <img src="https://assets.architecturaldigest.in/photos/67ab4944d00651ebb96a92aa/master/w_960,c_limit/GettyImages-182137629.jpg">
+
+</div>
+<br>
+<hr><hr>
+    <main>
+        <div class="info">
+        <p><b>Indian architecture is a diverse tapestry spanning thousands of years, rooted in religion, climate, and history . It includes 
+
+            <ul>
+                <li>Anscient And Rock-cut</li>
+                <li>Temple Architecture</li>
+                <li>Modern Architecture</li>
+                <li>Forts</li>
+            </ul>
+        </b></p>
+        </div>
+<button id="homeBtn">
+   <i class="fa-solid fa-arrow-up"></i>
+</button>
+        <br>
+        <div class="home">
+        <a href="culture.html">Home</a>
+        </div>
+        <hr>
+        <details>
+    <summary><h2>Ancient Architecture</h2></summary>
+        <div class="Ascient">
+            
+            <p>Ancient architecture, spanning from early civilizations to roughly 550 CE, is characterized by 
+            monumental stone structures, rock-cut caves, and early temples designed around religious and cosmic principles. 
+            Key features include advanced urban planning (Indus Valley), monumental columns, and meticulous craftsmanship, with structures 
+            often built to showcase royal power or spiritual devotion.</p>
+        <p><b>Ancient Indian Architecture:</b>
+            <ul>
+            <li>Mauryan & Gupta Periods: Defined by monumental stone structures, rock-cut caves (Ajanta and Ellora), and refined temples (5th-century Gupta temples).</li>
+            <li>Temple Design: Cities were often designed around a central temple, acting as a spiritual and social hub.</li>
+            <li>Key Features: Stupas (e.g., Sanchi), free-standing circular, apsidal, and shikhara-style temples, and rock-cut architecture.</li>
+            <li>Other Structures: Stepwells, such as the 11th-century Rani ki Vav in Gujarat, highlight incredible subterranean engineering.</li></p>
+            </ul>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Karla_caves_Chaitya.jpg/960px-Karla_caves_Chaitya.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Ellora_Cave_16_si0308.jpg/1280px-Ellora_Cave_16_si0308.jpg">
+            <br>
+            <div class="content">
+            <h3>Prehistoric</h3>
+            <p><b>Baghor Paleolithic shrine</b>
+            Main article: Baghor stone
+            A strongly probable shrine from Upper
+            Paleolithic period dated (9000-8000 BCE) dedicated to worshipping of Goddess (Shakti)
+            made of stone has been discovered at Baghor in the Sidhi district in the Indian state of Madhya Pradesh.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/India-5749_-_Visvanatha_Temple_-_Flickr_-_archer10_%28Dennis%29.jpg/500px-India-5749_-_Visvanatha_Temple_-_Flickr_-_archer10_%28Dennis%29.jpg">
+           
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Statues_of_Vaishnavi%2C_Varahi%2C_Indrani_and_Camunda%2C_National_Museum%2C_New_Delhi.jpg/500px-Statues_of_Vaishnavi%2C_Varahi%2C_Indrani_and_Camunda%2C_National_Museum%2C_New_Delhi.jpg">
+            </div>
+            <div class="content">
+            <h3>Bronze Age Period</h3>
+            <p>Period (5th–2nd Millennium BCE)
+                Early Harappan phase
+                Although the urban phase of Harappa has been dated back to 2600 BCE, excavation at Kalibangan from the 
+                early or proto-Harappan period already shows an urban development with fortification, grid layout of the city and drain 
+                system. The settlement consisted of a fortified city mostly made of mud-brick architecture but characterized by an appearance of fired 
+                bricks around 3000 BCE which was used to line the drains of the city. Planned settlements from an early Harappan era with structures 
+                parallel to the streets which run perpendicular to each other with public drainage system has been uncovered at the site of Rakhigarhi, one of the biggest urbanized 
+                areas of the Indus Valley Civilization dating back to 4000–3200 BCE. Even earlier phase dated 4400–4200 BCE has marked the appearance of wedge-shaped
+                mud bricks with rectangular houses.[6]</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/View_of_Granary_and_Great_Hall_on_Mound_F_-_Archaeological_site_of_Harappa.jpg/500px-View_of_Granary_and_Great_Hall_on_Mound_F_-_Archaeological_site_of_Harappa.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Dock_at_lothal.JPG/500px-Dock_at_lothal.JPG">
+            </div>
+            <div class="content">
+            <h3>Second Urbanization period (1025 BCE - 320 BCE)</h3>
+            <p>
+                Ghositarama monastery
+
+Ghoshitaram monastery in Kosambi dating back to 6th-century BCE
+Ghoshitaram monastery in Kosambi dating back to 6th-century BCE. Buddhist scripture attributes this very old monastic site to the time of the Buddha which has been backed by archaeology, founded by a banker named Ghosita.
+   Mahajanapadas
+
+
+From the time of the Mahajanapadas (600 BCE-320 BCE), walled and moated cities with large gates and multi-storied buildings which consistently used arched windows and doors and made intense use of wooden architecture, 
+are important features of the architecture during this period.[16] The reliefs of Sanchi, dated to the 1st centuries BCE-CE, show cities such as Kushinagar or Rajagriha as splendid walled cities during the time of the Buddha (6th century BCE). 
+Archaeologically, this period corresponds in part to the Northern Black Polished Ware culture.[17]         
+Buddhist caves
+During the time of the Buddha (c. 563/480 or c. 483/400 BCE), Buddhist monks were also in the habit of using natural caves, such as the Saptaparni Cave, southwest from Rajgir, Bihar.[19][20] Many believe it to be the site in which Buddha spent some time before his death,[21] and where the first Buddhist council was held after the Buddha died (paranirvana). The Buddha himself had also used the Indrasala Cave for meditation, starting a tradition of using caves, natural or man-made, as religious retreats, that would last for over a millennium.[24]
+
+</p>
+</div>
+<div class="content">
+<h3>Classical period (320 BCE - 550 CE)</h3>
+<p>
+    Monumental stone architecture
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sarnath_capital.jpg/250px-Sarnath_capital.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Pataliputra_capital%2C_Bihar_Museum%2C_Patna%2C_3rd_century_BCE.jpg/500px-Pataliputra_capital%2C_Bihar_Museum%2C_Patna%2C_3rd_century_BCE.jpg">
+    The Indian emperor Ashoka (rule: 273-232 BCE) established the Pillars of Ashoka throughout his realm, generally next to Buddhist stupas. According to Buddhist tradition, Ashoka recovered the relics of the Buddha from the earlier stupas (except from the Ramagrama stupa), and erected 84.000 stupas to distribute the relics across India. In effect, many stupas are thought to date originally from the time of Ashoka, such as Sanchi or Kesariya, where he also erected pillars with his inscriptions, and possibly Bharhut, Amaravati or Dharmarajika in Gandhara.
+</p>
+</div>
+<div class="content">
+<h3>Early Middle Ages (550-1200 CE)</h3>
+<p>
+  Main articles: Hindu architecture and Hindu temple architecture
+Navghan Kuvo, Gujarat, 11th century CE.Hindu temple architecture in the Indian subcontinent continued to develop in North India and South India. Nagara style developed in North India where a Hindu temple incorporated Shikhara as its predominant architectural element whereas in southern India Vimana was used instead. The Hindu temple architecture was characterized by the use of stone as the dominant building material compared to the earlier period in which the burnt bricks were used instead.</p> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Shore_temple%2C_mahabalipuram.jpg/330px-Shore_temple%2C_mahabalipuram.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PURI_JAGANATHA_TEMPLE%2C_PURI%2C_ORISSA%2C_INDIA%2C_ASIA.jpg/330px-PURI_JAGANATHA_TEMPLE%2C_PURI%2C_ORISSA%2C_INDIA%2C_ASIA.jpg">
+
+</div>
+<div class="content">
+
+<h3>Fortification</h3>
+<p>Evidence indicates that the construction of fortification walls at Delhi applied nearly the same principle at Red Fort and Agra Fort as was the tradition during pre-Islamic Rajput periods. Excavation of Lal Kot beneath the Purana Qila revealed ruins which was constructed using similar method as in the post-Islamic and Mughal Periods.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Agra-Fort-10-Mauern-2018-gje.jpg/960px-Agra-Fort-10-Mauern-2018-gje.jpg"      >
+        </div>
+        </div>
+     
+             
+</details>
+<details>
+    <summary><h2>Temple Architecture</h2></summary>
+            <div class="temple">
+            <div class="Intro">
+            <h3>Introduction</h3>
+            <p>
+Most of the architectural remains that survive from Ancient and Medieval India are religious in nature. 
+In different parts of the country, distinct architectural style of temples was result of geographical, ethnic and historical diversities.
+</p>
+
+<p>
+Two broad orders of temples in the country are known as <b>Nagara</b> in the north and <b>Dravida</b> in the south. 
+At times, the <b>Vesara</b> style of temples is also found as an independent style, created through the selective mixing of the Nagara and Dravida orders.
+</p>
+
+<p>
+As temples grew more complex, more surfaces were created for sculpture by adding more and more rhythmically projecting, symmetrical walls and niches, without breaking away from the fundamental plan of the shrine.
+</p>
+
+<p><b>Basic Features of the Hindu Temples:</b></p>
+
+<ul>
+    <li>
+        <b>Sanctum (garbhagriha literally ‘womb-house’):</b> 
+        It was a small cubicle with a single entrance which grew into a larger chamber in time. 
+        The garbhagriha is made to house the main icon.
+    </li>
+
+    <li>
+        <b>Entrance to the temple:</b> 
+        It may be a portico or colonnaded hall that incorporates space for a large number of worshippers and is known as a mandapa.
+    </li>
+
+    <li>
+        <b>Freestanding temples tend to have a mountain-like spire:</b> 
+        It can take the shape of a curving shikhar in North India and a pyramidal tower, called a vimana, in South India.
+    </li>
+
+    <li>
+        <b>The vahan:</b> 
+        It was mount or vehicle of the temple’s main deity along with a standard pillar or dhvaj is placed axially before the sanctum.
+    </li>
+
+    <li>
+        <b>Mithun sculptures:</b> 
+        Many Hindu temples feature mithun (embracing couple) sculptures, considered auspicious. 
+        Usually, they are placed at the entrance of the temple or on an exterior wall or they may also be placed on the walls between the mandapa and the main shrine.
+    </li>
+</ul>
+<img style="height:200px; width:600px;" src="https://www.drishtiias.com/images/uploads/1577961344_image20.jpg">
+</div>
+<div class="architect">
+<h3><b>Nagara or North Indian Temple Style</b></h3>
+
+<p>
+In North India, temples are usually built on a raised stone platform with steps. 
+Unlike South India, they generally lack large boundary walls or gateways. 
+The main shrine (garbhagriha) lies directly under the tallest tower called <b>shikhara</b>.
+</p>
+
+<ul>
+    <li><b>Latina:</b> Square base with inward curving tower.</li>
+    <li><b>Phamsana:</b> Broader and shorter with sloping roof.</li>
+    <li><b>Valabhi:</b> Rectangular with vaulted roof.</li>
+</ul>
+</div>
+<div class="architect">
+<h3><b>Central Indian Temples</b></h3>
+<img src="https://www.drishtiias.com/images/uploads/1577961621_image5.jpg">
+ 
+<p>
+Temples in Uttar Pradesh, Madhya Pradesh, and Rajasthan are mostly made of sandstone. 
+Gupta period temples are simple with pillars and small mandapas. 
+Deogarh temple is a classic example of the <b>panchayatana style</b>.
+</p>
+
+<ul>
+    <li>Khajuraho temples are famous for sculptures.</li>
+    <li>Kandariya Mahadeo temple is a major example.</li>
+</ul>
+</div>
+<div class="architect">
+<h3><b>Western Indian Temples</b></h3>
+<div class="img-row">
+<img src="https://www.drishtiias.com/images/uploads/1577964027_image6.jpg">
+<img src="https://www.drishtiias.com/images/uploads/1577964082_image14.jpg">
+</div>
+<p>
+Temples in Gujarat and Rajasthan use sandstone, basalt, and marble. 
+The Sun Temple at Modhera is famous for its large stepped tank and alignment with sunlight.
+</p>
+</div>
+<div class="architect">
+<h3><b>Eastern Indian Temples</b></h3>
+<div class="img-row">
+
+<img src="https://www.drishtiias.com/images/uploads/1577964201_image3.jpg">
+<img src="https://www.drishtiias.com/images/uploads/1578027815_image9.jpg">
+</div>
+<p>
+Eastern temples are found in Bengal, Odisha, and Assam. 
+Terracotta was widely used in Bengal, while Odisha temples are known for detailed carvings.
+</p>
+
+<ul>
+    <li><b>Konark Sun Temple:</b> Designed like a chariot with stone wheels.</li>
+    <li><b>Kamakhya Temple:</b> Important Shakti Peeth in Assam.</li>
+</ul>
+</div>
+<div class="architect">
+
+<h3><b>Hill Temples</b></h3>
+<div class="img-row">
+<img src="https://www.drishtiias.com/images/uploads/1577966146_image10.jpg">
+<img src="https://www.drishtiias.com/images/uploads/1577965993_image11.jpg">
+</div>
+<p>
+Temples in Kashmir and Himalayas show a mix of wooden architecture and stone styles. 
+Many temples combine Nagara features with local traditions.
+</p>
+</div>
+<div class="architect">
+<h3><b>Dravida or South Indian Temple Style</b></h3>
+<img src="https://www.drishtiias.com/images/uploads/1577964637_image13.jpg">
+<p>
+Dravida temples are enclosed by walls with large gateways called <b>gopurams</b>. 
+The main tower (vimana) is pyramid-shaped, and temple complexes often include water tanks.
+</p>
+
+<ul>
+    <li>Famous temple cities: Kanchipuram, Madurai, Thanjavur.</li>
+    <li>Brihadeeswara temple is one of the largest temples in India.</li>
+</ul>
+</div>
+<div class="architect">
+
+<h3><b>Deccan Architecture</b></h3>
+<img src="https://www.drishtiias.com/images/uploads/1577964688_image19.jpg">
+<p>
+The Deccan region shows a mix of North and South styles called <b>Vesara</b>. 
+The Kailashnath temple at Ellora is a masterpiece carved from a single rock.
+</p>
+</div>
+<div class="architect">
+<h3><b>Buddhist Architecture</b></h3>
+<img src="https://www.drishtiias.com/images/uploads/1577965700_image17.jpg">
+<p>
+Bodhgaya and Nalanda were major Buddhist centres. 
+The Mahabodhi Temple reflects a mix of Nagara and Dravida styles.
+</p>
+</div>
+<div class="architect">
+<h3><b>Jain Architecture</b></h3>
+<img src="https://www.drishtiias.com/images/uploads/1577965587_image2.jpg">
+<p>
+Jain temples are found across India. 
+The Dilwara temples at Mount Abu and the statue of Gomateshwara at Shravanabelagola are famous examples.
+</p> 
+</div>       
+</div>
+</details>
+<details>
+    <summary><h2>Modern Architecture</h2></summary>
+<div class="modern">
+    
+    <h3> Famous Examples of Modern Indian Architecture</h3>
+
+        <ul>
+            <li> Lotus Temple (Delhi)</li>
+            <li> Chandigarh Capitol Complex</li>
+            <li> Mumbai Skyline (Modern Skyscrapers)</li>
+        </ul>
+        <div class="lotus">
+        <h3><b>1.Lotus Temple</b></h3>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/56/e2/7e/engineering-marvel-at.jpg?w=600&h=400&s=1">
+<p>
+            The Lotus Temple is a Baháʼí House of Worship in New Delhi, India. 
+            It was completed in December 1986 and is notable for its lotus-like shape, 
+            making it a prominent attraction in the city.
+        </p>
+
+        <p>
+            Like all Bahá’í Houses of Worship, the Lotus Temple is open to all people, 
+            regardless of religion or any other qualification.
+        </p>
+
+        <ul>
+            <li>📍 <b>Address:</b> Lotus Temple Rd, Bahapur, Kalkaji, New Delhi, Delhi</li>
+            <li>👨‍🎨 <b>Architect:</b> Fariborz Sahba</li>
+            <li>🏗️ <b>Architectural Style:</b> Expressionist architecture</li>
+            <li>📅 <b>Opened:</b> 24 December 1986</li>
+            <li>📏 <b>Height:</b> 34 m</li>
+            <li>📞 <b>Phone:</b> 011 2644 4029</li>
+        </ul>
+        </div>
+        <div class="capitol">
+        <h3><b>2. Chandigarh Capitol Complex</b></h3>
+        <img src="https://images.adsttc.com/media/images/5515/8f24/e58e/ceba/3f00/0140/large_jpg/3252816956_d5e7254a1b_b.jpg?1427476238">
+        <p>
+            The Chandigarh Capitol Complex is located in Sector 1, Chandigarh, India. 
+            It was designed in 1952 by the famous Swiss-French architect <b>Le Corbusier</b>. 
+            In 2016, it was recognized as a UNESCO World Heritage Site as part of 
+            “The Architectural Work of Le Corbusier”.
+        </p>
+
+        <ul>
+            <li>📍 <b>Location:</b> Sector 1, Chandigarh, India</li>
+            <li>👨‍🎨 <b>Architect:</b> Le Corbusier</li>
+            <li>📅 <b>Year of Design:</b> 1952</li>
+            <li>🌍 <b>UNESCO Status:</b> World Heritage Site (2016)</li>
+        </ul>
+
+        <p><b>✨ Key Components:</b></p>
+
+        <ul>
+            <li>🏛️ <b>Palace of Assembly:</b> Monumental structure for legislative functions.</li>
+            <li>🏢 <b>Secretariat Building:</b> Large administrative block with modular design.</li>
+            <li>⚖️ <b>High Court:</b> Known for its dramatic roof structure.</li>
+            <li>👐 <b>Open Hand Monument:</b> Symbol of peace — “open to give, open to receive”.</li>
+        </ul>
+
+        <p>
+            The complex reflects modernist principles such as exposed concrete, bold geometry, 
+            and planned urban design. It represents the three pillars of democracy—executive, 
+            legislative, and judicial.
+        </p>
+
+        <p>
+            It is an important symbol of India’s post-independence development and remains a 
+            major tourist attraction in Chandigarh.
+        </p>
+        </div>
+        <div class="skyline">
+        <h3><b>3. Mumbai Skyline </b></h2>
+            <img src="https://plus.unsplash.com/premium_photo-1661962392861-c3cb1cf6dd82?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bXVtYmFpJTIwc2t5bGluZXxlbnwwfHwwfHx8MA%3D%3D">
+        <p>
+            Mumbai’s skyline is a striking symbol of India’s rapid urban growth and modern architectural ambition. 
+            Once known for colonial and Art Deco buildings, the city now features glass-and-steel skyscrapers, 
+            luxury towers, and advanced commercial hubs.
+        </p>
+
+        <p><b>🌆 Key Features:</b></p>
+        <ul>
+            <li>🏢 High-rise buildings exceeding 50–80 stories</li>
+            <li>🏙️ Mixed-use complexes (offices + retail + residences)</li>
+            <li>🌊 Iconic skyline along the Arabian Sea</li>
+            <li>🌍 Global architectural influence</li>
+            <li>✨ Luxury living with modern amenities</li>
+        </ul>
+
+        <p><b>🏙 Notable Skyscrapers:</b></p>
+        <ul>
+            <li>🏢 <b>The Imperial Towers (Tardeo)</b> – Among the tallest residential buildings</li>
+            <li>🌆 <b>World One (Lower Parel)</b> – Iconic ultra-tall tower</li>
+            <li>🏙️ <b>Omkar 1973 (Worli)</b> – Luxury glass towers</li>
+            <li>🏢 <b>Palais Royale (Worli)</b> – Sustainable supertall building</li>
+            <li>🌿 <b>One Avighna Park</b> – Eco-friendly modern towers</li>
+        </ul>
+
+        <p><b>📌 Modern Trends:</b></p>
+        <ul>
+            <li>📈 Vertical urban development</li>
+            <li>⚙️ Smart and energy-efficient buildings</li>
+            <li>💎 Growth of luxury real estate</li>
+            <li>🌏 Global skyline competitiveness</li>
+        </ul>
+        </div>
+    </div>
+</div>
+</details>
+    </main>
+        <footer>
+        © Indian Culture | Indian architecture
+    </footer>
+    <script>
+  const btn = document.getElementById("homeBtn");
+
+  window.onscroll = function () {
+    btn.style.display = window.scrollY > 200 ? "block" : "none";
+  };
+
+  btn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
+
+</body>
+</html>
