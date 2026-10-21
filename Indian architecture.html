@@ -39,7 +39,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             width:350px;
             padding:5px;
             border-radius:15px;
-            border:2px solid (#8B0000);
+            border:2px solid #8B0000;
         }
         .slider{
             display:flex;
@@ -191,6 +191,156 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 #homeBtn:hover{
   background:#ea4a06;
   transform:translateY(-5px);
+}
+
+/* Mobile layout for Indian Architecture */
+@media screen and (max-width: 768px) {
+
+    header {
+        height: auto;
+        min-height: 130px;
+        margin: 10px;
+        padding: 20px 8px;
+        font-size: 30px;
+    }
+
+    header h1 {
+        font-size: clamp(24px, 7vw, 36px);
+    }
+
+    h2 {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+        padding: 10px 5px;
+        font-size: clamp(20px, 5vw, 28px);
+        line-height: 1.3;
+    }
+
+    summary {
+        display: block;
+        width: 100%;
+    }
+
+    /* Keep the image slider horizontally scrollable */
+    .slider {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        padding: 0 10px 12px;
+    }
+
+    .slider img {
+        flex: 0 0 82%;
+        width: 82%;
+        height: 220px;
+        object-fit: cover;
+        margin: 0;
+        scroll-snap-align: start;
+    }
+
+    /* Make content sections fit the screen */
+    .info,
+    .Ascient,
+    .modern,
+    .lotus,
+    .capitol,
+    .skyline,
+    .content,
+    .temple,
+    .Intro,
+    .architect {
+        width: auto;
+        max-width: 100%;
+        margin: 10px;
+        padding: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Make all content images responsive */
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content img,
+    .temple img,
+    .Intro img,
+    .architect img,
+    .modern img,
+    .lotus img,
+    .capitol img,
+    .skyline img {
+        display: block;
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        margin: 10px auto;
+        object-fit: contain;
+    }
+
+    /* Stack paired images vertically */
+    .img-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-row img {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    li {
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .home {
+        width: fit-content;
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .home a {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 18px 10px;
+        font-size: 15px;
+    }
+
+    #homeBtn {
+        width: 45px;
+        height: 45px;
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slider img {
+        flex-basis: 88%;
+        width: 88%;
+        height: 190px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
 }
 
 
